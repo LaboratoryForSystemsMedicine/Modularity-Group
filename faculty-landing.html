@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/favicon.png" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <title>Stamats - UFL</title>
+        <meta property="og:title" content="Page Title for SEO"
+        />
+        <meta property="og:description" content="Description for SEO" />
+        <meta property="og:image" content="url to share image" />
+        <meta name="format-detection" content="telephone=no">
+    </head>
+    
+    <body>
+        <!-- START FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
+        <header class="header header-wrapper position-sticky w-100">
+            <div class="container-fluid header-container">
+                <div class="row justify-content-between header-row"> <a class="visually-hidden-focusable" href="#content" tabindex="1">Skip to main content</a>
+
+                    <!--
+                    START LOGO COL-->
+                    <div class="col-sm-8 col-md-6 col-logo"> <a class="navbar-brand" href="index.html" tabindex="1" alt="...">
+              <img src="./img/Florida_logo.svg" alt="Logo" title="school-logo" />
+              <span class="visually-hidden">School Logo Link</span>
+            </a>
+
+                    </div>
+                    <!-- END LOGO COL-->
+                    <!-- START DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
+                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3 flex-column audience-nav-col">
+                        
+                        <!-- Audience Nav Dropdown Links-->
+                        <div class="audience-nav-links d-flex justify-content-end">
+                            
+                            
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
+                    <!-- START MOBILE ONLY SEARCH AND TOGGLE-->
+                    <div class="mobile-nav"> <a class="navbar-search" id="mobile-search-icon" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" alt="Toggle Search Form"
+                        title="Toggle Search Form" tabindex="0">
+              <span class="visually-hidden">Toggle Search Form</span>
+            </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+
+                            <span
+                            class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
+</span>
+                        </button>
+                    </div>
+                    <!-- END MOBILE ONLY SEARCH AND TOGGLE-->
+                </div>
+            </div>
+            <!-- END FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
+            <!-- START FULL WIDTH MAIN NAV CONTAINER -->
+            <nav class="navbar main_navbar pt-0 pb-0 navbar-expand-xxl" id="main-navbar">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- START MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
+                        <div class="mobile-offsite-toggle-wrapper"> <span class="mobile-offsite-links">
+                <a href="#" class="mobile-offsite-link">OPTIONAL OFF-SITE LINK</a>
+                <a href="#" class="mobile-main-link">UNIVERSITY OF FLORIDA</a>
+              </span>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+
+                                <span
+                                class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
+</span>
+                            </button>
+                        </div>
+                        <!-- END MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
+                        <!-- Start MAIN MENU UL with DD-->
+                        <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100"
+                        id="main-nav-ul">
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="about.html" id="navbarDropdown1" aria-expanded="false"
+                                aria-haspopup="true"> About Our Group </a>
+
+                            </li>
+                            
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="faculty-landing.html" id="navbarDropdown3" aria-expanded="false"> Members </a>
+
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="research.html" id="navbarDropdown4" aria-expanded="false"> Research </a>
+
+                                
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" aria-expanded="false"> Resources </a>
+
+                                <!--
+                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+
+                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
+                                aria-labelledby="navbarDropdown6" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                                <li><a class="nav-item" href="talks.html" tabindex="0">Talks</a>
+
+                                </li>
+                                <li><a class="nav-item" href="references.html" tabindex="0">Relevant Papers</a>
+
+                                </li>
+                                <li><a class="nav-item" href="boolean_networks_control.html" tabindex="0">Boolean Networks and Control</a>
+
+                                </li>
+                        
+                                <li><a class="nav-item" href="expository_papers.html" tabindex="0">Expository Papers</a>
+
+                                </li>
+                                <li><a class="nav-item" href="conferences.html" tabindex="0">Conferences</a>
+
+                                </li>
+                                </ul>
+                                <!-- END Dropdown DIV -->
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            
+                            <!-- End Dropdown Menu List Item -->
+                            <div class="mobile-secondary-dropdown"></div>
+                        </ul>
+                        <!-- End MAIN MENU UL -->
+                        <!-- START MOBILE ONLY SECONDARY LINKS -->
+                        <!-- END MOBILE ONLY SECONDARY LINKS -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- END FULL WIDTH MAIN NAV CONTAINER -->
+        <div id="content">
+            <section class="w-100" style="background-color: #F4F6F6;">
+                <!-- Start Breadcrumb template inlcuded in the Title Block -->
+                
+                <!-- End Breadcrumb template inlcuded in the Title Block -->
+            </section>
+            <section class="faculty-page">
+                <div class="title-wrapper">
+                     <h1 class="font-heading">MEET OUR GROUP</h1>
+
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div class="d-flex faculty-row">
+                        
+                        <!-- Start Faculty Column-->
+                        <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/adams_henry.jpg" class="img-fluid faculty-image" alt="Henry Adams" width="200" height="200"/>
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Henry Adams</strong><br>
+                    Department of Mathematics, University of Florida<br>
+                    henry.adams@ufl.edu</p>
+                    
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/andrews_steve.jpg" class="img-fluid faculty-image" alt="Steven Andrews" width="200" height="200"/>
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Steven Andrews</strong><br>
+                    Department of Bioengineering, University of Washington<br>
+                    steven.s.andrews@gmail.com</p>
+                    
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/sai_bavisetty.jpg" class="img-fluid faculty-image" alt="Sai Bavisetty" width="200" height="200"/>
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Sai Bavisetty</strong><br>
+                    Department of Medicine, University of Florida<br>
+                    narayana.venkata@ufl.edu</p>
+                    
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/bubenik_peter.jpg" class="img-fluid faculty-image" alt="Peter Bubenik" width="200" height="200" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Peter Bubenik</strong><br>
+                    Department of Mathematics, University of Florida<br>
+                    peter.bubenik@ufl.edu</p>
+                    <!--<a href="mailto:peter.bubenik@ufl.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a>-->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/carranza_daniel.jpg" class="img-fluid faculty-image" alt="Daniel Carranza" width="200" height="200" />
+               
+                <div class="faculty-listing-bio">
+                    <p><strong>Daniel Carranza</strong><br>
+                    Department of Mathematics, Johns Hopkins University<br>
+                    dcarran3@jh.edu</p>
+<!--<a href="mailto:dcarran3@jh.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a>-->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/cruz_daniel.jpg" class="img-fluid faculty-image" alt="Daniel Cruz" width="200" height="200"/>
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Daniel Cruz</strong><br>
+                    Department of Medicine, University of Florida<br>
+                    daniel.cruz@medicine.ufl.edu</p>
+                   <!-- <a href="mailto:daniel.cruz@medicine.ufl.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a>-->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/dimitrova_elena.jpg" class="img-fluid faculty-image" alt="Elena Dimitrova" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Elena Dimitrova</strong><br>
+                    Department of Mathematics, Cal State San Luis Obispo<br>
+                    edimitro@calpoly.edu</p>
+                    <!--<a href="mailto:edimitro@calpoly.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a>-->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/Feng_Song.jpg" class="img-fluid faculty-image" alt="Song Feng" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Song Feng</strong><br>
+                    Pacific Northwest National Laboratory<br>
+                    song.feng@pnnl.gov</p>
+                    <!--<a href="mailto:song.feng@pnnl.gov" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a>-->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/fonseca_luis.jpg" class="img-fluid faculty-image" alt="Luis Fonseca" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Luis Fonseca</strong><br>
+                    Department of Medicine, University of Florida<br>
+                    llfonseca@medicine.ufl.edu</p>
+                    <!--<a href="mailto:llfonseca@medicine.ufl.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a>-->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/Marcio Fuzeto Gameiro.jpg" class="img-fluid faculty-image" alt="Marcio Fuzeto Gameiro" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Marcio Fuzeto Gameiro</strong><br>
+                    Department of Mathematics, Rutgers University<br>
+                    gameiro@math.rutgers.edu</p>
+                   <!-- <a href="mailto:gameiro@math.rutgers.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a>-->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/Daniel Guralnik.jpg" class="img-fluid faculty-image" alt="Daniel Guralnik" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Daniel Guralnik</strong><br>
+                    Department of Aerospace Engineering, University of Florida<br>
+                    danguralnik@ufl.edu</p>
+                    <!--<a href="mailto:danguralnik@ufl.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a>-->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/faculty-1.webp" class="img-fluid faculty-image" alt="Joe Hellerstein" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Joe Hellerstein</strong><br>
+                    eScience Institute, University of Washington<br>
+                    joseph.hellerstein@gmail.com</p>
+                   <!-- <a href="mailto:joseph.hellerstein@gmail.com" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/kadelka_claus.jpg" class="img-fluid faculty-image" alt="Claus Kadelka" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Claus Kadelka</strong><br>
+                    Department of Mathematics, Iowa State University<br>
+                    ckadelka@iastate.edu</p>
+                   <!-- <a href="mailto:ckadelka@iastate.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/William Kalies.png" class="img-fluid faculty-image" alt="William Kalies" />
+            
+                <div class="faculty-listing-bio">
+                    <p><strong>William Kalies</strong><br>
+                    Department of Mathematics and Statistics, University of Toledo<br>
+                    william.kalies@utoledo.edu</p>
+                   <!-- <a href="mailto:william.kalies@utoledo.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/kapulkin_chris.jpg" class="img-fluid faculty-image" alt="Chris Kapulkin" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Chris Kapulkin</strong><br>
+                    Department of Mathematics, University of Western Ontario<br>
+                    kkapulki@uwo.ca</p>
+                  <!--  <a href="mailto:kkapulki@uwo.ca" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/faculty-1.webp" class="img-fluid faculty-image" alt="Nathan Kershaw" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Nathan Kershaw</strong><br>
+                    Department of Mathematics, University of Western Ontario<br>
+                    nkershaw@uwo.ca</p>
+                   <!-- <a href="mailto:nkershaw@uwo.ca" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/laubenbacher_reinhard.jpg" class="img-fluid faculty-image" alt="Reinhard Laubenbacher" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Reinhard Laubenbacher</strong><br>
+                    Department of Medicine, University of Florida<br>
+                    <span style="font-size: 0.8em; word-wrap: break-word; display: inline-block; overflow-wrap: break-word;">reinhard.laubenbacher@medicine.ufl.edu</span>
+                    </p>
+                   <!-- <a href="mailto:reinhard.laubenbacher@medicine.ufl.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/faculty-1.webp" class="img-fluid faculty-image" alt="Byungjoon Min" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Byungjoon Min</strong><br>
+                    Department of Medicine, University of Florida<br>
+                    min.byungjoon@gmail.com</p>
+                   <!-- <a href="mailto:min.byungjoon@gmail.com" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/mischaikow_konstantin.jpg" class="img-fluid faculty-image" alt="Konsgantin Mischaikow" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Konsgantin Mischaikow</strong><br>
+                    Department of Mathematics, Rutgers University<br>
+                    mischaik@math.rutgers.edu</p>
+                   <!-- <a href="mailto:mischaik@math.rutgers.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/murugarra_david.jpg" class="img-fluid faculty-image" alt="David Murrugarra" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>David Murrugarra</strong><br>
+                    Department of Mathematics, University of Kentucky<br>
+                    murrugarra@uky.edu</p>
+                    <!-- <a href="mailto:murrugarra@uky.edu" tabindex="0">Send Email</a>
+                    <a href="/faculty-bio.html" tabindex="0">See Bio</a> -->
+                </div>
+            </div>
+            <!-- START SLICK SLIDE ITEM-->
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/faculty-1.webp" class="img-fluid faculty-image" alt="Udoka Odionyenma" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Udoka Odionyenma</strong><br>
+                    Department of Mathematics, University of Kentucky<br>
+                    Udoka.Odionyenma@uky.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/olusegun_faith.jpg" class="img-fluid faculty-image" alt="Faith Olusegun" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Faith Olusegun</strong><br>
+                    Department of Mathematics, Iowa State University<br>
+                    faith508@iastate.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/faculty-1.webp" class="img-fluid faculty-image" alt="Daniel Plaugher" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Daniel Plaugher</strong><br>
+                    Department of Mathematics, University of Kentucky<br>
+                    plaugher_dr@uky.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/sauro_herbert.jpg" class="img-fluid faculty-image" alt="Herbert Sauro" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Herbert Sauro</strong><br>
+                    Department of Bioengineering, University of Washington<br>
+                    hsauro@uw.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/sego_tj.jpg" class="img-fluid faculty-image" alt="TJ Sego" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>TJ Sego</strong><br>
+                    Department of Medicine, University of Florida<br>
+                    timothy.sego@medicine.ufl.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/stigler_brandy.jpg" class="img-fluid faculty-image" alt="Brandy Stigler" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Brandy Stigler</strong><br>
+                    Department of Mathematics, Southern Methodist University<br>
+                    bstigler@mail.smu.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                <!--<a href="/faculty-bio.html" target="_blank" class="faculty-listing-img" tabindex="0" alt="Shailja Tripathi">-->
+                    <img src="./img/faculty-1.webp" class="img-fluid faculty-image" alt="Shailja Tripathi" />
+                <!--</a>-->
+                <div class="faculty-listing-bio">
+                    <p><strong>Shailja Tripathi</strong><br>
+                    Department of Mathematics, University of Kentucky<br>
+                    str255@uky.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/tsiorinstsoa_sandra.jpg" class="img-fluid faculty-image" alt="Sandra Tsiorintsoa" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Sandra Tsiorintsoa</strong><br>
+                    Department of Medicine, University of Florida<br>
+                    <span style="font-size: 0.8em; word-wrap: break-word; display: inline-block; overflow-wrap: break-word;">Sandra.Tsiorintsoa@medicine.ufl.edu</span></p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/veliz-cuba-alan.jpg" class="img-fluid faculty-image" alt="Alan Veliz-Cuba" />
+            
+                <div class="faculty-listing-bio">
+                    <p><strong>Alan Veliz-Cuba</strong><br>
+                    Department of Mathematics, University of Dayton<br>
+                    avelizcuba1@udayton.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/wagner_hubert.jpg" class="img-fluid faculty-image" alt="Hubert Wagner" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Hubert Wagner</strong><br>
+                    Department of Mathematics, University of Florida<br>
+                    hwagner@ufl.edu</p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/faculty-1.webp" class="img-fluid faculty-image" alt="Matt Wheeler" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Matt Wheeler</strong><br>
+                    Department of Medicine, University of Florida<br>
+                    <span style="font-size: 0.9em; word-wrap: break-word; display: inline-block; overflow-wrap: break-word;">matthew.wheeler@medicine.ufl.edu</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="faculty-listing-item" tabindex="-1">
+                
+                    <img src="./img/faculty-1.webp" class="img-fluid faculty-image" alt="Steven Wiley" />
+                
+                <div class="faculty-listing-bio">
+                    <p><strong>Steven Wiley</strong><br>
+                    Pacific Northwest National Laboratory<br>
+                    steven.wiley@pnnl.gov</p>
+                </div>
+            </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center button-wrapper"> <a id="facultyLoadmore" class="button animated-border-button button-border-orange button-dark-bg"
+                        alt="Load More Faculty">Load More</a>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- OFF CANVAS DROPDWON-->
+        <div class="offcanvas offcanvas-top off-canvas-search" tabindex="-1" id="offcanvasTop"
+        aria-labelledby="siteSearch" data-bs-scroll="true" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                tabindex="3"></button>
+            </div>
+            <div class="offcanvas-body" id="siteSearch">
+                <!-- START SEARCH FORM -->
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="How can we help you?"
+                    tabindex="1" autofocus="true" aria-label="Search"> <a class="btn search-submit" type="submit" tabindex="2"></a>
+
+                </form>
+                <!-- END SEARCH FORM -->
+            </div>
+        </div>
+        <!-- END OFF CANVAS DROPDWON-->
+        <!-- END FOOTER WRAPPER -->
+        <script src="./js/all.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </body>
+
+</html>

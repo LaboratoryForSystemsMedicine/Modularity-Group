@@ -1,0 +1,147 @@
+12:01:25 From Elena Dimitrova to Everyone:
+
+                 I apologize I can only stay for the first 30 minutes. I need to meet with a job candidate.
+
+                
+
+12:15:34 From Alan Veliz-Cuba to Everyone:
+
+                 https://arxiv.org/pdf/1308.4758
+
+                 https://arxiv.org/pdf/1109.5197
+
+                
+
+12:17:37 From Alan Veliz-Cuba to Everyone:
+
+                 https://arxiv.org/pdf/1108.0209
+
+                
+
+12:20:57 From Herbert M Sauro to Everyone:
+
+                 Bruce Clarke review, the link takes you to a google drive I just created: https://drive.google.com/drive/folders/1fWcNo6E722vZA5lyibqvSSGUbc3QaYBP?usp=sharing
+
+                 Brandilyn Stigler:👍🏼
+
+                
+
+12:21:41 From Herbert M Sauro to Everyone:
+
+                 Feinberg's work:
+
+                
+
+                 https://cbe.osu.edu/chemical-reaction-network-theory
+
+                
+
+12:22:39 From Herbert M Sauro to Everyone:
+
+                 Brandilyn, if at some point you understand this work, let me know!
+
+                
+
+12:24:04 From Herbert M Sauro to Everyone:
+
+                 There is some overlap between Clarke's work and metabolic control analysis, for example Clarke's currents are MCA's elementary modes, and Clarke's kinetic orders are the elasticities.
+
+                
+
+12:24:46 From Steven S Andrews to Everyone:
+
+                 I’m also reminded of Stuart Kauffman’s work on the number of attractors scales as the square root of the number of genes. Also Robert May’s work on stability and complexity of food webs.
+
+                
+
+12:25:35 From Herbert M Sauro to Everyone:
+
+                 Yes you're right, there might be some connection there.
+
+                
+
+12:26:46 From Venkata Bavisetty to Everyone:
+
+                 Replying to "I’m also reminded of Stuart Kauffman’s work on the...":
+
+                 I think there is a latter paper which shows that number of attractors scales exponentially instead of as square root of number of genes
+
+                
+
+12:28:12 From Steven S Andrews to Everyone:
+
+                 Replying to "I’m also reminded of Stuart Kauffman’s work on the...":
+
+                 Interesting. I wasn’t aware of it. That’s a very different result!
+
+                
+
+12:29:02 From Venkata Bavisetty to Everyone:
+
+                 Replying to "I’m also reminded of Stuart Kauffman’s work on the...":
+
+                 Here is a link to the paper: LX8711 2..5
+
+                
+
+12:31:00 From Steven S Andrews to Everyone:
+
+                 Replying to "I’m also reminded of Stuart Kauffman’s work on the...":
+
+                 That link isn’t working for me. Can you send the title, so I can google it?
+
+                
+
+12:31:24 From Venkata Bavisetty to Everyone:
+
+                 Replying to "I’m also reminded of Stuart Kauffman’s work on the...":
+
+                 Sorry. Here is the title: Superpolynomial Growth in the Number of Attractors in Kauffman Networks
+
+                
+
+12:31:46 From Steven S Andrews to Everyone:
+
+                 Replying to "I’m also reminded of Stuart Kauffman’s work on the...":
+
+                 Thanks!
+
+                
+
+12:33:19 From Herbert M Sauro to Everyone:
+
+                 Replying to "I’m also reminded of Stuart Kauffman’s work on the...":
+
+                 Steve, I copied it to the google drive link shown above
+
+                
+
+12:35:20 From Steven S Andrews to Everyone:
+
+                 Replying to "I’m also reminded of Stuart Kauffman’s work on the...":
+
+                 Thanks. Got it.
+
+                
+
+12:48:03 From Konstantin Mischaikow to Everyone:
+
+                 https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006121
+
+                
+
+12:53:49 From Herbert M Sauro to Everyone:
+
+https://docs.google.com/document/d/17PjzELL1BcUvzSXKsLWlbEPxf6x_F7T0VL8K472upwk/edit?tab=t.0
+
+                
+
+12:55:57 From Bernardo Rivas to Everyone:
+
+                 bernardo.dopradorivas@utoledo.edu
+
+                
+
+12:56:19 From Brandilyn Stigler to Everyone:
+
+                 I've got another meeting coming up.  So I will drop off now.
