@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/favicon.png" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <title>Stamats - UFL</title>
+        <meta property="og:title" content="Page Title for SEO"
+        />
+        <meta property="og:description" content="Description for SEO" />
+        <meta property="og:image" content="url to share image" />
+        <meta name="format-detection" content="telephone=no">
+    </head>
+    
+    <body>
+        <!-- START FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
+        <header class="header header-wrapper position-sticky w-100">
+            <div class="container-fluid header-container">
+                <div class="row justify-content-between header-row"> <a class="visually-hidden-focusable" href="#content" tabindex="1">Skip to main content</a>
+
+                    <!--
+                    START LOGO COL-->
+                    <div class="col-sm-8 col-md-6 col-logo"> <a class="navbar-brand" href="index.html" tabindex="1" alt="...">
+              <img src="./img/Florida_logo.svg" alt="Logo" title="school-logo" />
+              <span class="visually-hidden">School Logo Link</span>
+            </a>
+
+                    </div>
+                    <!-- END LOGO COL-->
+                    <!-- START DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
+                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3 flex-column audience-nav-col">
+                        
+                        <!-- Audience Nav Dropdown Links-->
+                        <div class="audience-nav-links d-flex justify-content-end">
+                            
+                            
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
+                    <!-- START MOBILE ONLY SEARCH AND TOGGLE-->
+                    <div class="mobile-nav"> <a class="navbar-search" id="mobile-search-icon" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" alt="Toggle Search Form"
+                        title="Toggle Search Form" tabindex="0">
+              <span class="visually-hidden">Toggle Search Form</span>
+            </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+
+                            <span
+                            class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
+</span>
+                        </button>
+                    </div>
+                    <!-- END MOBILE ONLY SEARCH AND TOGGLE-->
+                </div>
+            </div>
+            <!-- END FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
+            <!-- START FULL WIDTH MAIN NAV CONTAINER -->
+            <nav class="navbar main_navbar pt-0 pb-0 navbar-expand-xxl" id="main-navbar">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- START MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
+                        <div class="mobile-offsite-toggle-wrapper"> <span class="mobile-offsite-links">
+                <a href="#" class="mobile-offsite-link">OPTIONAL OFF-SITE LINK</a>
+                <a href="#" class="mobile-main-link">UNIVERSITY OF FLORIDA</a>
+              </span>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+
+                                <span
+                                class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
+</span>
+                            </button>
+                        </div>
+                        <!-- END MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
+                        <!-- Start MAIN MENU UL with DD-->
+                        <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100"
+                        id="main-nav-ul">
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="about.html" id="navbarDropdown1" aria-expanded="false"
+                                aria-haspopup="true"> About Our Group </a>
+
+                            </li>
+                            
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="faculty-landing.html" id="navbarDropdown3" aria-expanded="false"> Members </a>
+
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="research.html" id="navbarDropdown4" aria-expanded="false"> Research </a>
+
+                                
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" aria-expanded="false"> Resources </a>
+
+                                <!--
+                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+
+                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
+                                aria-labelledby="navbarDropdown6" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                                <li><a class="nav-item" href="talks.html" tabindex="0">Talks</a>
+
+                                </li>
+                                <li><a class="nav-item" href="references.html" tabindex="0">Relevant Papers</a>
+                                    <li><a class="nav-item" href="boolean_networks_control.html" tabindex="0">Boolean Networks and Control</a>
+
+                                    </li>
+                            
+                                    <li><a class="nav-item" href="expository_papers.html" tabindex="0">Expository Papers</a>
+    
+                                    </li>
+                                </li>
+                                <li><a class="nav-item" href="conferences.html" tabindex="0">Conferences</a>
+
+                                </li>
+                                </ul>
+                                <!-- END Dropdown DIV -->
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            
+                            <!-- End Dropdown Menu List Item -->
+                            <div class="mobile-secondary-dropdown"></div>
+                        </ul>
+                        <!-- End MAIN MENU UL -->
+                        <!-- START MOBILE ONLY SECONDARY LINKS -->
+                        <!-- END MOBILE ONLY SECONDARY LINKS -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- END FULL WIDTH MAIN NAV CONTAINER -->
+        <div id="content">
+            <section class="w-100" style="background-color: #FFFFFF;">
+                <!-- Start Breadcrumb template inlcuded in the Title Block -->
+                
+                <!-- End Breadcrumb template inlcuded in the Title Block -->
+                
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                 <p></p>
+                                 <p></p>
+                                 <p></p>
+
+                                <p>Our groups research centers aroung the concept of modularity in systems biology.
+
+                                    Here are some relevant papers on modularity.</p>
+                                <!-- Add a list of research papers-->
+                               
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <p><em><strong>References</strong></em></p>
+                    <ol>
+                        
+                    </ol>
+                                        
+                    
+                    <!-- Add more papers as needed -->
+                                
+                    </div>        
+                </section>
+            </div>
+        <!-- OFF CANVAS DROPDWON-->
+        <div class="offcanvas offcanvas-top off-canvas-search" tabindex="-1" id="offcanvasTop"
+        aria-labelledby="siteSearch" data-bs-scroll="true" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                tabindex="3"></button>
+            </div>
+            <div class="offcanvas-body" id="siteSearch">
+                <!-- START SEARCH FORM -->
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="How can we help you?"
+                    tabindex="1" autofocus="true" aria-label="Search"> <a class="btn search-submit" type="submit" tabindex="2"></a>
+
+                </form>
+                <!-- END SEARCH FORM -->
+            </div>
+        </div>
+        <!-- END OFF CANVAS DROPDWON-->
+        <!-- END FOOTER WRAPPER -->
+        <script src="./js/all.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </body>
+
+</html>

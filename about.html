@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/favicon.png" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <title>Stamats - UFL</title>
+        <meta property="og:title" content="Page Title for SEO"
+        />
+        <meta property="og:description" content="Description for SEO" />
+        <meta property="og:image" content="url to share image" />
+    </head>
+    
+    <body>
+        <!-- START FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
+        <header class="header header-wrapper position-sticky w-100">
+            <div class="container-fluid header-container">
+                <div class="row justify-content-between header-row"> <a class="visually-hidden-focusable" href="#content" tabindex="1">Skip to main content</a>
+
+                    <!--
+                    START LOGO COL-->
+                    <div class="col-sm-8 col-md-6 col-logo"> <a class="navbar-brand" href="index.html" tabindex="1" alt="...">
+              <img src="./img/Florida_logo.svg" alt="Logo" title="school-logo" />
+              <span class="visually-hidden">School Logo Link</span>
+            </a>
+
+                    </div>
+                    <!-- END LOGO COL-->
+                    <!-- START DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
+                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3 flex-column audience-nav-col">
+                        <!-- Optional Offsite and UFL Header Links-->
+                        
+                        <!-- END Optional Offsite and UFL Header Links-->
+                        <!-- Audience Nav Dropdown Links-->
+                        </div>
+                    <!-- END DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
+                    <!-- START MOBILE ONLY SEARCH AND TOGGLE-->
+                    <div class="mobile-nav"> <a class="navbar-search" id="mobile-search-icon" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" alt="Toggle Search Form"
+                        title="Toggle Search Form" tabindex="0">
+              <span class="visually-hidden">Toggle Search Form</span>
+            </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+
+                            <span
+                            class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
+</span>
+                        </button>
+                    </div>
+                    <!-- END MOBILE ONLY SEARCH AND TOGGLE-->
+                </div>
+            </div>
+            <!-- END FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
+            <!-- START FULL WIDTH MAIN NAV CONTAINER -->
+            <nav class="navbar main_navbar pt-0 pb-0 navbar-expand-xxl" id="main-navbar">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- START MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
+                        <div class="mobile-offsite-toggle-wrapper"> <span class="mobile-offsite-links">
+                <a href="#" class="mobile-offsite-link">OPTIONAL OFF-SITE LINK</a>
+                <a href="#" class="mobile-main-link">UNIVERSITY OF FLORIDA</a>
+              </span>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+
+                                <span
+                                class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
+</span>
+                            </button>
+                        </div>
+                        <!-- END MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
+                        <!-- Start MAIN MENU UL with DD-->
+                        <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100"
+                        id="main-nav-ul">
+                            <!-- Start menu li with DD-->
+                            <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100"
+                        id="main-nav-ul">
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="about.html" id="navbarDropdown1" aria-expanded="false"
+                                aria-haspopup="true"> About Our Group </a>
+
+                            </li>
+                            
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="faculty-landing.html" id="navbarDropdown3" aria-expanded="false"> Members </a>
+
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="research.html" id="navbarDropdown4" aria-expanded="false"> Research </a>
+
+                                
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" aria-expanded="false"> Resources </a>
+
+                                <!--
+                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+
+                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
+                                aria-labelledby="navbarDropdown6" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                                <li><a class="nav-item" href="talks.html" tabindex="0">Talks</a>
+
+                                </li>
+                                <li><a class="nav-item" href="references.html" tabindex="0">Relevant Papers</a>
+
+                                </li>
+                                
+                                <li><a class="nav-item" href="boolean_networks_control.html" tabindex="0">Boolean Networks and Control</a>
+
+                                </li>
+                        
+                                <li><a class="nav-item" href="expository_papers.html" tabindex="0">Expository Papers</a>
+
+                                </li>
+                                <li><a class="nav-item" href="conferences.html" tabindex="0">Conferences</a>
+
+                                </li>
+                                </ul>
+                            </li>    
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            
+                            <!-- End Dropdown Menu List Item -->
+                            <div class="mobile-secondary-dropdown">
+                                <hr>
+                            </div>
+                        </ul>
+                        <!-- End MAIN MENU UL -->
+                        <!-- START MOBILE ONLY SECONDARY LINKS -->
+                        <!-- END MOBILE ONLY SECONDARY LINKS -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- END FULL WIDTH MAIN NAV CONTAINER -->
+        <!-- START HERO CONTAINER -->
+        <section class="hero container-fluid p-0 w-100">
+            <div class="hero-wrapper verScroll_Col">
+                <!-- START / END HERO BG IMG CONTAINER - HEIGHT/WIDTH/IMG DICTATED IN
+                CSS -->
+                <div class="hero-bg-img"></div>
+                <!-- START OBJECT WRAPPER (ANIMATED ORANGE LINES ON RIGHT SIDE)
+                -->
+                <div class="hero-object-wrapper">
+                    <div class="hero-object" id="object1" style="top: 120px;">
+                        <img class="vce-single-image" width="10" height="219" src="./img/ver_bar_thick.webp"
+                        alt="" title="ver_bar_thick">
+                    </div>
+                    <div class="hero-object" id="object2" style="top: 120px;">
+                        <img loading="lazy" class="vce-single-image" width="2" height="363" src="./img/ver_bar_thin.webp"
+                        alt="" title="ver_bar_thin">
+                    </div>
+                </div>
+                <!-- END OBJECT WRAPPER -->
+                <!-- START HERO BANNER WRAPPER - CBC -->
+                <div class="hero-banner-wrapper hero__text">
+                    
+                    <div class="banner_title">
+                         <h1>Modularity in Biology</h1>
+
+                        <br>
+                        <!-- START HERO BANNER EXCERPT SHOW ON HOVER - CBC -->
+                        
+                        <!-- END HERO BANNER EXCERPT SHOW ON HOVER - CBC -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END HERO CONTAINER -->
+        
+            <!-- End Cards Text Image Wrapper -->
+        <!-- End Image Gallery Section -->
+        <!-- START SHOWCASE TEXT IMAGE SECTION -->
+        <!-- END SHOWCASE TEXT IMAGE SECTION -->
+        <!-- START SHOWCASE TEXT IMAGE SECTION -->
+        <!-- END SHOWCASE TEXT IMAGE SECTION -->
+        <!-- START SHOWCASE TEXT IMAGE Third SECTION -->
+        <!-- END SHOWCASE TEXT IMAGE SECTION -->
+        <!-- OFF CANVAS DROPDWON-->
+        <div class="offcanvas offcanvas-top off-canvas-search" tabindex="-1" id="offcanvasTop"
+        aria-labelledby="siteSearch" data-bs-scroll="true" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                tabindex="3"></button>
+            </div>
+            <div class="offcanvas-body" id="siteSearch">
+                <!-- START SEARCH FORM -->
+                
+                <!-- END SEARCH FORM -->
+            </div>
+        </div>
+        <section class="showcase-text-only">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                         <h2>Modularity in Systems Biology</h2>
+
+                        <p>The hypothesis that biological systems are “modular” is widely accepted in systems biology, and there is a large body of literature on the topic. 
+                            However, at this time there is no consensus what the right definition of module is, whether it should be a structural or a dynamic property or both, and what the concrete benefits of modularity are for an organism. 
+                            This interdisciplinary working group aims to approach this subject from both a biological and a computational direction. 
+                            Through a series of presentations, discussions, and subgroups focused on specific topics, it provides a forum for researchers interested in this topic. 
+                            We are collecting resources, papers, and software around the theme of modularity, write papers, and provide means of communication for its members. </p>
+                        <div class="d-flex flex-wrap justify-content-center button-wrapper"> <a class="button animated-border-button button-border-blue button-text-dark"
+                            href="research.html">Our Research</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OFF CANVAS DROPDWON-->
+        <!----not re-named-->
+        <!-- START FOOTER WRAPPER -->
+         <!-- END FOOTER WRAPPER -->
+        <script src="./js/all.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </body>
+
+</html>
