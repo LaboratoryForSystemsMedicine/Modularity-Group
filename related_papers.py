@@ -41,7 +41,7 @@ if __name__ == "__main__":
     import os
     import sys
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    file_name = "expository_papers.csv"
+    file_name = "related_papers.csv"
     file_path = os.path.join(dir_path, file_name)
     with open(file_path, "r") as file:
         dois = file.readlines()
