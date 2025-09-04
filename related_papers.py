@@ -55,6 +55,8 @@ if __name__ == "__main__":
             
             
             html_content = insert_publication_info(html_content, info)
+        else:
+            print(f"DOI {doi} not found.")
     file_path = os.path.join(dir_path, "references.html")
     if html_content:
         with open(file_path, "w", encoding="utf-8") as file:
