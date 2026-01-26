@@ -1,199 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
-        />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="./img/favicon.png" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-        />
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-        <title>Stamats - UFL</title>
-        <meta property="og:title" content="Page Title for SEO"
-        />
-        <meta property="og:description" content="Description for SEO" />
-        <meta property="og:image" content="url to share image" />
-        <meta name="format-detection" content="telephone=no">
-    </head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <title>Conferences - Systems Biology Group</title>
     
-    <body>
-        <!-- START FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
-        <header class="header header-wrapper position-sticky w-100">
-            <div class="container-fluid header-container">
-                <div class="row justify-content-between header-row"> <a class="visually-hidden-focusable" href="#content" tabindex="1">Skip to main content</a>
+    <style>
+        /* Modern Workshop Styling */
+        .conference-page-wrapper {
+            max-width: 1100px; /* Increased width for better readability */
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
 
-                    <!--
-                    START LOGO COL-->
-                    <div class="col-sm-8 col-md-6 col-logo"> <a class="navbar-brand" href="index.html" tabindex="1" alt="...">
-              
-              <span class="visually-hidden">School Logo Link</span>
-            </a>
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-                    </div>
-                    <!-- END LOGO COL-->
-                    <!-- START DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
-                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3 flex-column audience-nav-col">
-                        
-                        <!-- Audience Nav Dropdown Links-->
-                        <div class="audience-nav-links d-flex justify-content-end">
-                            
-                            
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
-                    <!-- START MOBILE ONLY SEARCH AND TOGGLE-->
-                    <div class="mobile-nav"> <a class="navbar-search" id="mobile-search-icon" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" alt="Toggle Search Form"
-                        title="Toggle Search Form" tabindex="0">
-              <span class="visually-hidden">Toggle Search Form</span>
-            </a>
+        .workshop-card {
+            background: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+        .title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
 
-                            <span
-                            class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
-</span>
-                        </button>
-                    </div>
-                    <!-- END MOBILE ONLY SEARCH AND TOGGLE-->
-                </div>
-            </div>
-            <!-- END FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
-            <!-- START FULL WIDTH MAIN NAV CONTAINER -->
-            <nav class="navbar main_navbar pt-0 pb-0 navbar-expand-xxl" id="main-navbar">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- START MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
-                        <div class="mobile-offsite-toggle-wrapper"> <span class="mobile-offsite-links">
-                <a href="#" class="mobile-offsite-link">OPTIONAL OFF-SITE LINK</a>
-                <a href="#" class="mobile-main-link">UNIVERSITY OF FLORIDA</a>
-              </span>
+        .date-range { 
+            color: #666; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
 
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+        .workshop-title { 
+            margin: 5px 0; 
+            color: #00529B; /* UFL Blue */
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
 
-                                <span
-                                class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
-</span>
-                            </button>
-                        </div>
-                        <!-- END MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
-                        <!-- Start MAIN MENU UL with DD-->
-                        <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100"
-                        id="main-nav-ul">
-                            <!-- Start menu li with DD-->
-                            <li class="nav-item"> <a class="nav-link" href="about.html" id="navbarDropdown1" aria-expanded="false"
-                                aria-haspopup="true"> About Our Group </a>
+        /* Call to Action Button */
+        .btn-workshop {
+            background-color: #00529B;
+            color: white !important;
+            padding: 14px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.2s, background 0.2s;
+        }
 
-                            </li>
-                            
-                            <!-- End Dropdown Menu List Item -->
-                            <!-- Start menu li with DD-->
-                            <li class="nav-item"> <a class="nav-link" href="faculty-landing.html" id="navbarDropdown3" aria-expanded="false"> Members </a>
+        .btn-workshop:hover {
+            background-color: #003d73;
+            transform: translateY(-2px);
+        }
 
-                            </li>
-                            <!-- End Dropdown Menu List Item -->
-                            <!-- Start menu li with DD-->
-                            <li class="nav-item"> <a class="nav-link" href="research.html" id="navbarDropdown4" aria-expanded="false"> Research </a>
+        .details-grid {
+            display: flex;
+            gap: 20px;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #d9534f;
+        }
 
-                                
-                            </li>
-                            <!-- End Dropdown Menu List Item -->
-                            <!-- Start menu li with DD-->
-                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" aria-expanded="false"> Resources </a>
+        .deadline-box { flex: 1; }
+        .deadline-box strong { 
+            display: block; 
+            color: #d9534f; 
+            font-size: 0.8rem; 
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .deadline-box p { margin: 0; font-weight: 700; font-size: 1.1rem; color: #333; }
 
-                                <!--
-                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+        .organizers-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 0;
+            list-style: none;
+        }
 
-                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
-                                aria-labelledby="navbarDropdown6" style="border-top-left-radius: 0;border-top-right-radius: 0;">
-                                <li><a class="nav-item" href="talks.html" tabindex="0">Talks</a>
+        .organizers-list li {
+            padding: 8px 12px;
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            border-radius: 4px;
+        }
 
-                                </li>
-                                <li><a class="nav-item" href="references.html" tabindex="0">Relevant Papers</a>
+        h3 { 
+            border-bottom: 2px solid #f0f0f0; 
+            padding-bottom: 10px; 
+            margin-top: 35px; 
+            color: #2c3e50; 
+            font-weight: 700;
+        }
 
-                                </li>
-                                <li><a class="nav-item" href="conferences.html" tabindex="0">Conferences</a>
+        .overview p {
+            line-height: 1.8;
+            color: #4a4a4a;
+            font-size: 1.05rem;
+        }
 
-                                </li>
-                                </ul>
-                                <!-- END Dropdown DIV -->
-                            </li>
-                            <!-- End Dropdown Menu List Item -->
-                            <!-- Start menu li with DD-->
-                            
-                            <!-- End Dropdown Menu List Item -->
-                            <div class="mobile-secondary-dropdown"></div>
+        .secondary-conference-list {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .title-row { flex-direction: column; }
+            .details-grid { flex-direction: column; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header header-wrapper position-sticky w-100">
+        <nav class="navbar main_navbar pt-0 pb-0 navbar-expand-xxl" id="main-navbar">
+            <div class="container-fluid">
+                <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Our Group</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty-landing.html">Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item dropdown dropdown-hover"> 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-item" href="talks.html">Talks</a></li>
+                            <li><a class="nav-item" href="references.html">Relevant Papers</a></li>
+                            <li><a class="nav-item" href="conferences.html">Conferences</a></li>
                         </ul>
-                        <!-- End MAIN MENU UL -->
-                        <!-- START MOBILE ONLY SECONDARY LINKS -->
-                        <!-- END MOBILE ONLY SECONDARY LINKS -->
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- END FULL WIDTH MAIN NAV CONTAINER -->
-        <div id="content">
-            <section class="w-100" style="background-color: #FFFFFF;">
-                <!-- Start Breadcrumb template inlcuded in the Title Block -->
-                
-                <!-- End Breadcrumb template inlcuded in the Title Block -->
-                
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center">
-                                 <h2>Conferences related to Systems Biology</h2>
-    
-                                <p></p>
-                                <!-- Add a list of research papers-->
-                               
-                            </div>
-                        </div>
-                    </div>
-                
-                
-                    <p><em><strong>Upcoming conferences</strong></em></p>
-                    <ol><li> <strong>Society for Mathematical Biology Annual Meeting - 2025</strong>. </li>
-                        </li></ol>
-                                        
-                    
-                    <!-- Add more papers as needed -->
-                                
-                    </div>        
-                </section>
+                    </li>
+                </ul>
             </div>
-        <!-- OFF CANVAS DROPDWON-->
-        <div class="offcanvas offcanvas-top off-canvas-search" tabindex="-1" id="offcanvasTop"
-        aria-labelledby="siteSearch" data-bs-scroll="true" data-bs-backdrop="false">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
-                tabindex="3"></button>
-            </div>
-            <div class="offcanvas-body" id="siteSearch">
-                <!-- START SEARCH FORM -->
-                <form class="d-flex">
-                    <input class="form-control" type="search" placeholder="How can we help you?"
-                    tabindex="1" autofocus="true" aria-label="Search"> <a class="btn search-submit" type="submit" tabindex="2"></a>
+        </nav>
+    </header>
 
-                </form>
-                <!-- END SEARCH FORM -->
-            </div>
+    <div id="content" class="conference-page-wrapper">
+        <div class="section-header">
+            <h1>Conferences & Workshops</h1>
+            <p>Recent and upcoming events on Modularity.</p>
         </div>
-        <!-- END OFF CANVAS DROPDWON-->
-        <!-- END FOOTER WRAPPER -->
-        <script src="./js/all.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    </body>
 
+        <section class="workshop-card">
+            <div class="header-content">
+                <div class="title-row">
+                    <div>
+                        <span class="date-range">April 13 - 17, 2026</span>
+                        <h2 class="workshop-title">Modularity of Biological Systems</h2>
+                    </div>
+                    <a href="https://www.nitmb.org/modularity-of-biological-systems" class="btn-workshop" target="_blank">Visit Workshop Website</a>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <div class="deadline-box">
+                    <strong>Travel Applications Deadline</strong>
+                    <p>Friday, February 13, 2026</p>
+                </div>
+                <div class="deadline-box">
+                    <strong>Local Applications Deadline</strong>
+                    <p>Friday, March 13, 2026</p>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>Location</h3>
+                <p><strong>NITMB</strong> (National Institute for Theory and Mathematics in Biology)</p>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                <p>The hypothesis that biological systems exhibit a modular structure is widely accepted. Beyond being a “fundamental law of biology,” it has the potential for important applications, for instance in biomedicine and synthetic biology. It could also serve as an organizational principle for the analysis of high-dimensional complex -omics datasets. However, there is currently no widely accepted definition of what comprises a biological “module”. </p>
+                <p>To address this problem, the proposed workshop will bring together an interdisciplinary group of researchers from biology, modeling, mathematics, and fields outside of biology that currently use the modularity concept, such as engineering and computer science. Participants will work collaboratively to outline a research program consisting of a set of specific research projects that will deliver a rigorous basis for theoretical, technical, and applied research in this field.</p>
+            </div>
+            
+            <div style="margin-top: 30px; text-align: right;">
+                <a href="https://www.nitmb.org/modularity-of-biological-systems" target="_blank" style="color: #00529B; font-weight: bold; text-decoration: none;">View full event details on NITMB &rarr;</a>
+            </div>
+        </section>
+
+        <section class="secondary-conference-list">
+            <h3>Other Upcoming Conferences</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 15px 0; border-bottom: 1px solid #eee;">
+                    <strong>Society for Mathematical Biology Annual Meeting</strong> — 2025
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="./js/all.js"></script>
+</body>
 </html>
