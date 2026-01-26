@@ -1,219 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/favicon.png" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/favicon.png" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <title>Conferences - Systems Biology Group</title>
-    
-    <style>
-        /* Modern Workshop Styling */
-        .conference-page-wrapper {
-            max-width: 1100px; /* Increased width for better readability */
-            margin: 40px auto;
-            padding: 0 20px;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <title>Stamats - UFL</title>
+        <meta property="og:title" content="Page Title for SEO" />
+        <meta property="og:description" content="Description for SEO" />
+        <meta property="og:image" content="url to share image" />
+        <meta name="format-detection" content="telephone=no">
 
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .workshop-card {
-            background: #ffffff;
-            border: 1px solid #e1e4e8;
-            border-radius: 12px;
-            padding: 40px;
-            margin-bottom: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        .title-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .date-range { 
-            color: #666; 
-            font-weight: 700; 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-        }
-
-        .workshop-title { 
-            margin: 5px 0; 
-            color: #00529B; /* UFL Blue */
-            font-size: 2.2rem;
-            line-height: 1.2;
-        }
-
-        /* Call to Action Button */
-        .btn-workshop {
-            background-color: #00529B;
-            color: white !important;
-            padding: 14px 24px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            display: inline-block;
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        .btn-workshop:hover {
-            background-color: #003d73;
-            transform: translateY(-2px);
-        }
-
-        .details-grid {
-            display: flex;
-            gap: 20px;
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 8px;
-            margin: 30px 0;
-            border-left: 5px solid #d9534f;
-        }
-
-        .deadline-box { flex: 1; }
-        .deadline-box strong { 
-            display: block; 
-            color: #d9534f; 
-            font-size: 0.8rem; 
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-        .deadline-box p { margin: 0; font-weight: 700; font-size: 1.1rem; color: #333; }
-
-        .organizers-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 15px;
-            padding: 0;
-            list-style: none;
-        }
-
-        .organizers-list li {
-            padding: 8px 12px;
-            background: #fff;
-            border: 1px solid #f0f0f0;
-            border-radius: 4px;
-        }
-
-        h3 { 
-            border-bottom: 2px solid #f0f0f0; 
-            padding-bottom: 10px; 
-            margin-top: 35px; 
-            color: #2c3e50; 
-            font-weight: 700;
-        }
-
-        .overview p {
-            line-height: 1.8;
-            color: #4a4a4a;
-            font-size: 1.05rem;
-        }
-
-        .secondary-conference-list {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid #eee;
-        }
-
-        @media (max-width: 768px) {
-            .title-row { flex-direction: column; }
-            .details-grid { flex-direction: column; }
-        }
-    </style>
-</head>
-
-<body>
-    <header class="header header-wrapper position-sticky w-100">
-        <nav class="navbar main_navbar pt-0 pb-0 navbar-expand-xxl" id="main-navbar">
-            <div class="container-fluid">
-                <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100">
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Our Group</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faculty-landing.html">Members</a></li>
-                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-                    <li class="nav-item dropdown dropdown-hover"> 
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6">Resources</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-item" href="talks.html">Talks</a></li>
-                            <li><a class="nav-item" href="references.html">Relevant Papers</a></li>
-                            <li><a class="nav-item" href="conferences.html">Conferences</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div id="content" class="conference-page-wrapper">
-        <div class="section-header">
-            <h1>Conferences & Workshops</h1>
-            <p>Recent and upcoming events on Modularity.</p>
-        </div>
-
-        <section class="workshop-card">
-            <div class="header-content">
-                <div class="title-row">
-                    <div>
-                        <span class="date-range">April 13 - 17, 2026</span>
-                        <h2 class="workshop-title">Modularity of Biological Systems</h2>
-                    </div>
-                    <a href="https://www.nitmb.org/modularity-of-biological-systems" class="btn-workshop" target="_blank">Visit Workshop Website</a>
-                </div>
-            </div>
-
-            <div class="details-grid">
-                <div class="deadline-box">
-                    <strong>Travel Applications Deadline</strong>
-                    <p>Friday, February 13, 2026</p>
-                </div>
-                <div class="deadline-box">
-                    <strong>Local Applications Deadline</strong>
-                    <p>Friday, March 13, 2026</p>
-                </div>
-            </div>
-
-            <div class="info-section">
-                <h3>Location</h3>
-                <p><strong>NITMB</strong> (National Institute for Theory and Mathematics in Biology)</p>
-            </div>
-
-            <div class="overview">
-                <h3>Overview</h3>
-                <p>The hypothesis that biological systems exhibit a modular structure is widely accepted. Beyond being a “fundamental law of biology,” it has the potential for important applications, for instance in biomedicine and synthetic biology. It could also serve as an organizational principle for the analysis of high-dimensional complex -omics datasets. However, there is currently no widely accepted definition of what comprises a biological “module”. </p>
-                <p>To address this problem, the proposed workshop will bring together an interdisciplinary group of researchers from biology, modeling, mathematics, and fields outside of biology that currently use the modularity concept, such as engineering and computer science. Participants will work collaboratively to outline a research program consisting of a set of specific research projects that will deliver a rigorous basis for theoretical, technical, and applied research in this field.</p>
-            </div>
+        <style>
+            /* Specific Styles for the Workshop Card only */
+            .workshop-card {
+                font-family: sans-serif;
+                max-width: 1100px; /* Increased width as requested */
+                margin: 30px auto;
+                padding: 30px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                line-height: 1.6;
+                background-color: #fff;
+            }
+            .header-flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .date-range { color: #666; font-weight: bold; text-transform: uppercase; font-size: 0.9em; }
+            .workshop-title { margin: 5px 0; color: #2c3e50; }
             
-            <div style="margin-top: 30px; text-align: right;">
-                <a href="https://www.nitmb.org/modularity-of-biological-systems" target="_blank" style="color: #00529B; font-weight: bold; text-decoration: none;">View full event details on NITMB &rarr;</a>
-            </div>
-        </section>
+            .btn-link {
+                background-color: #00529B; /* UFL Blue */
+                color: white !important;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            
+            .details-grid {
+                display: flex;
+                gap: 20px;
+                background: #f9f9f9;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 4px;
+            }
+            .deadline-box { flex: 1; }
+            .deadline-box strong { display: block; color: #d9534f; font-size: 0.85em; text-transform: uppercase; }
+            .deadline-box p { margin: 0; font-weight: bold; }
 
-        <section class="secondary-conference-list">
-            <h3>Other Upcoming Conferences</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 15px 0; border-bottom: 1px solid #eee;">
-                    <strong>Society for Mathematical Biology Annual Meeting</strong> — 2025
-                </li>
-            </ul>
-        </section>
+            .organizers-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 10px;
+                padding: 0;
+                list-style: none;
+            }
+            h3 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 25px; }
+            
+            @media (max-width: 768px) {
+                .details-grid { flex-direction: column; }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header class="header header-wrapper position-sticky w-100">
+            <div class="container-fluid header-container">
+                <div class="row justify-content-between header-row"> 
+                    <a class="visually-hidden-focusable" href="#content" tabindex="1">Skip to main content</a>
+                    <div class="col-sm-8 col-md-6 col-logo"> 
+                        <a class="navbar-brand" href="index.html" tabindex="1">
+                            <span class="visually-hidden">School Logo Link</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3 flex-column audience-nav-col">
+                        <div class="audience-nav-links d-flex justify-content-end"></div>
+                    </div>
+                    <div class="mobile-nav"> 
+                        <a class="navbar-search" id="mobile-search-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+                            <span class="visually-hidden">Toggle Search Form</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                            <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+                            <span class="navbar-icon-wrapper"><span class="navbar-toggler-icon"></span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar main_navbar pt-0 pb-0 navbar-expand-xxl" id="main-navbar">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100" id="main-nav-ul">
+                            <li class="nav-item"> <a class="nav-link" href="about.html"> About Our Group </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="faculty-landing.html"> Members </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="research.html"> Research </a></li>
+                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" aria-expanded="false"> Resources </a>
+
+                                <!--
+                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+
+                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
+                                aria-labelledby="navbarDropdown6" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                                <li><a class="nav-item" href="talks.html" tabindex="0">Talks</a>
+
+                                </li>
+                                <li><a class="nav-item" href="references.html" tabindex="0">Relevant Papers</a>
+                                    <li><a class="nav-item" href="boolean_networks_control.html" tabindex="0">Boolean Networks and Control</a>
+
+                                    </li>
+                            
+                                    <li><a class="nav-item" href="expository_papers.html" tabindex="0">Expository Papers</a>
+    
+                                    </li>
+                                </li>
+                                <li><a class="nav-item" href="conferences.html" tabindex="0">Conferences</a>
+
+                                </li>
+                                </ul>
+                                <!-- END Dropdown DIV -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mt-5">
+                        <h2>Conferences related to Modularity</h2>
+                        <p><em>Upcoming conferences and workshops</em></p>
+                    </div>
+                </div>
+
+                <section class="workshop-card">
+                    <div class="header-flex">
+                        <div>
+                            <span class="date-range">April 13 - 17, 2026</span>
+                            <h2 class="workshop-title">Modularity of Biological Systems</h2>
+                        </div>
+                        <a href="https://www.nitmb.org/modularity-of-biological-systems" class="btn-link" target="_blank">Visit Website</a>
+                    </div>
+
+                    <div class="details-grid">
+                        <div class="deadline-box">
+                            <strong>TRAVEL Applications Deadline</strong>
+                            <p>Friday, February 13, 2026</p>
+                        </div>
+                        <div class="deadline-box">
+                            <strong>LOCAL Applications Deadline</strong>
+                            <p>Friday, March 13, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>Location</h3>
+                        <p>NITMB</p>
+
+                        
+                    </div>
+
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>The hypothesis that biological systems exhibit a modular structure is widely accepted. Beyond being a “fundamental law of biology,” it has the potential for important applications, for instance in biomedicine and synthetic biology. It could also serve as an organizational principle for the analysis of high-dimensional complex -omics datasets. However, there is currently no widely accepted definition of what comprises a biological “module”. There is also a lack of foundational research on modularity at both the theoretical and applied level. To address this problem, the proposed workshop will bring together an interdisciplinary group of researchers from biology, modeling, mathematics, and fields outside of biology that currently use the modularity concept, such as engineering and computer science. Participants will work collaboratively to outline a research program consisting of a set of specific research projects that will deliver a rigorous basis for theoretical, technical, and applied research in this field. </p>
+                    </div>
+                </section>
+                
+                <section class="workshop-card">
+    <div class="header-flex">
+        <div>
+            <span class="date-range">13 – 17 July 2026</span>
+            <h2 class="workshop-title">14th European Conference on Mathematical & Theoretical Biology</h2>
+        </div>
+        <a href="https://ecmtb2026.org/" class="btn-link" target="_blank">Visit Website</a>
     </div>
 
-    <script src="./js/all.js"></script>
-</body>
+    <div class="details-grid">
+        <div class="deadline-box">
+            <strong>Event Type</strong>
+            <p>Joint event by SMB and ESMTB</p>
+        </div>
+        <div class="deadline-box">
+            <strong>Host</strong>
+            <p>University of Graz, Austria</p>
+        </div>
+    </div>
+
+    
+</section>
+            </div>
+        </div>
+
+        <script src="./js/all.js"></script>
+    </body>
 </html>
