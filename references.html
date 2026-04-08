@@ -252,6 +252,7 @@
   .badge-aditya     { background-color: #6a1b9a; }
   .badge-erzso { background-color: #d84315; }
   .badge-david { background-color: #00796b; }
+  .badge-steve { background-color: #5c6bc0; }
 
 
 </style>
@@ -315,21 +316,55 @@
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-12 text-center mt-5 mb-4">
-    <h2 class="references-heading">References</h2>
-    <p class="references-lead">Our group's research centers around the concept of modularity in systems biology. Here are some relevant papers, organised by theme.</p>
+    <h2 class="references-heading">Annotated Bibliography: Modularity in Biological Systems</h2>
+    
 </div>
 </div>
+
+<div class="row justify-content-left">
+  <p style="font-size: 1.1em; margin-bottom: 20px;">
+        Our group's research centers around the concept of <strong>modularity in systems biology</strong>. 
+        This bibliography is organized around four central questions:
+    </p>
+
+    <div style="margin-bottom: 15px;padding-left: 25px; ">
+        <strong style="color: #0056b3;">(A) How is a module defined? &mdash;</strong> 
+        Conceptual foundations, structural and dynamical definitions, motif taxonomies, evolutionary origins of modularity, and the boundary problem. 
+        <em style="color: #666; font-size: 0.9em;"></em>
+    </div>
+
+    <div style="margin-bottom: 15px;padding-left: 25px; ">
+        <strong style="color: #0056b3;">(B) How can modules be used for control and design? &mdash;</strong>
+        Exploiting modular structure for prediction, therapeutic intervention, synthetic circuit design, robustness analysis, and design patterns. 
+        <em style="color: #666; font-size: 0.9em;"></em>
+    </div>
+
+    <div style="margin-bottom: 15px;padding-left: 25px; ">
+        <strong style="color: #0056b3;">(C) How can modules be composed? &mdash;</strong>
+        The compositionality problem: retroactivity, insulation, categorical frameworks, failures of composition, and practical tools for modular model assembly. 
+        <em style="color: #666; font-size: 0.9em;"></em>
+    </div>
+
+    <div style="margin-bottom: 15px;padding-left: 25px; ">
+        <strong style="color: #0056b3;">(D) How can modules be discovered? &mdash;</strong>
+        Algorithmic detection, community structure analysis, multiscale mapping, and experimental identification of modules from data. 
+        <em style="color: #666; font-size: 0.9em;"></em>
+    </div>
+  </div>
 
 <div class="row justify-content-center">
 <div class="col-12">
 
 
   <!-- ═══════════════════════════════════════════════
-       CATEGORY 1 — COMPLEXITY THEORY
+       SECTION A — HOW IS A MODULE DEFINED?
   ════════════════════════════════════════════════ -->
   <div class="category-block">
-    <div class="category-heading">Modularity Theory</div>
+    <div class="category-heading">A. How Is a Module Defined? — Conceptual Foundations &amp; Structural Definitions</div>
     <div class="reading-section">
+
+      <!-- A.1 Conceptual and Philosophical Foundations -->
+      <div class="category-heading" style="font-size:0.63rem; margin-top:1.5rem; margin-bottom:0.4rem; color: var(--rl-muted);">A.1 — Conceptual and Philosophical Foundations</div>
 
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
@@ -337,22 +372,16 @@
             <span class="paper-num">01</span>
             <span class="paper-title">The Architecture of Complexity</span>
             <span class="badge-rec badge-joe">Joe</span>
-            <div class="paper-author">Herbert A. Simon &nbsp;·&nbsp; <em>Facets Of Systems Science (1991)</em></div>
+            <div class="paper-author">Herbert A. Simon &nbsp;·&nbsp; <em>Facets of Systems Science (1991)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              Key thoughts (quoted from paper):
-                1. the frequency with which complexity takes the form of hierarchy-the complex system being composed of subsystems that, in turn, have their olvn subsystems, and so on. 
-                2. theorizes about the relation between the structure of a complex system and the time required for it to emerge through evolutionary processes : specifically, it argues that hierarchic systems will evolve far more quickly than non-hierarchic systems of comparable size. 
-                3. explores the dynamic properties of hierarchically organized systems, and shows how they can be decomposed into subsystems in order to analyze their behavior. 
-                4. examines the relation between coillplex systems and their descriptions.
+              This foundational essay argues that complex systems overwhelmingly exhibit hierarchical organization. Simon advances three claims: (1) hierarchic systems evolve far more rapidly than non-hierarchic systems; (2) their dynamics can be analyzed by decomposing them into quasi-independent subsystems; and (3) hierarchic structure enables compact, tractable descriptions. The paper remains the conceptual anchor for the modularity research program.
             </div>
             <a href="https://doi.org/10.1007/978-1-4899-0718-9_31" target="_blank" class="paper-link">DOI: 10.1007/978-1-4899-0718-9_31 ↗</a>
-
-            <!-- Additional Reading -->
             <div class="additional-reading">
               <div class="additional-reading-label">Additional Reading</div>
               <div class="add-entry">
@@ -363,44 +392,7 @@
                 </div>
                 <a href="https://doi.org/10.1511/1948.36.536" target="_blank" class="add-entry-link">DOI ↗</a>
               </div>
-              <!-- <div class="add-entry">
-                <span class="add-entry-dot">◆</span>
-                <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">[ Insert additional reading title ]</div>
-                  <div class="add-entry-meta add-placeholder">Author &nbsp;·&nbsp; <em>Journal (Year)</em> — Brief note on relevance.</div>
-                </div>
-              </div> -->
             </div>
-          </div>
-        </div>
-      </div>
-
-            <div class="paper-item" onclick="togglePaper(this)">
-        <div class="paper-header">
-          <div class="paper-header-left">
-            <span class="paper-num">02</span>
-            <span class="paper-title">Mapping the multiscale structure of biological systems</span>
-            <span class="badge-rec badge-joe">Joe</span>
-            <div class="paper-author">Leah V. Schaffer, Trey Ideker &nbsp;·&nbsp; <em>Cell Systems (2021)</em></div>
-          </div>
-          <span class="paper-toggle">+</span>
-        </div>
-        <div class="paper-body">
-          <div class="paper-body-inner">
-            <div class="paper-thoughts">
-              Advances a theory about the competitive advantage of modularity -- transferring larger units of functionality to more rapidly advance evolution, such as longer stretches of DNA (e.g., plasmids) for horizontal gene transfer.
-            </div>
-            <a href="https://doi.org/10.1016/j.cels.2021.05.012" target="_blank" class="paper-link">DOI: 10.1016/j.cels.2021.05.012 ↗</a>
-            <!-- <div class="additional-reading">
-              <div class="additional-reading-label">Additional Reading</div>
-              <div class="add-entry">
-                <span class="add-entry-dot">◆</span>
-                <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">[ Insert additional reading title ]</div>
-                  <div class="add-entry-meta add-placeholder">Author &nbsp;·&nbsp; <em>Journal (Year)</em> — Brief note on relevance.</div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -408,105 +400,497 @@
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
           <div class="paper-header-left">
-            <span class="paper-num">03</span>
-            <span class="paper-title">Logic-based modeling of biological networks with Netflux</span>
-            <span class="badge-rec badge-joe">Joe</span>
-            <div class="paper-author">Alexander P. Clark, Mukti Chowkwale, Alexander Paap, Stephen Dang, et al. &nbsp;·&nbsp; <em>Plos Computational Biology (2025)</em></div>
+            <span class="paper-num">02</span>
+            <span class="paper-title">From Molecular to Modular Cell Biology</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Leland H. Hartwell, John J. Hopfield, Stanislas Leibler, and Andrew W. Murray &nbsp;·&nbsp; <em>Nature (1999)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              Describes how modularity aids scientific discovery by providing a way to integrate separate models of a complex biological function to understand their interaction.
+              This hugely influential perspective argued that cell biology should shift focus from individual molecules to the modules that carry out discrete functions. Hartwell et al. defined modules as groups of interacting molecules that perform identifiable functions relatively independently of context, and proposed that general principles governing modules could be discovered by drawing on engineering and computer science. The paper catalyzed the systems biology movement and remains the most cited conceptual paper on biological modularity.
             </div>
-            <a href="https://doi.org/10.1371/journal.pcbi.1012864" target="_blank" class="paper-link">DOI: 10.1371/journal.pcbi.1012864 ↗</a>
-            <!-- <div class="additional-reading">
-              <div class="additional-reading-label">Additional Reading</div>
-              <div class="add-entry">
-                <span class="add-entry-dot">◆</span>
-                <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">[ Insert additional reading title ]</div>
-                  <div class="add-entry-meta add-placeholder">Author &nbsp;·&nbsp; <em>Journal (Year)</em> — Brief note on relevance.</div>
-                </div>
-              </div>
-            </div> -->
+            <a href="https://doi.org/10.1038/35011540" target="_blank" class="paper-link">DOI: 10.1038/35011540 ↗</a>
           </div>
         </div>
       </div>
-
-    </div>
-  </div>
-
-
-  <!-- ═══════════════════════════════════════════════
-       CATEGORY 2 — NETWORK THEORY
-  ════════════════════════════════════════════════ -->
-  <div class="category-block">
-    <div class="category-heading">Network Theory</div>
-    <div class="reading-section">
 
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
           <div class="paper-header-left">
             <span class="paper-num">04</span>
-            <span class="paper-title">Community structure in social and biological networks</span>
-            <span class="badge-rec badge-sai">Sai</span>
-            <div class="paper-author">M. Girvan, M. E. J. Newman &nbsp;·&nbsp; <em>Proceedings Of The National Academy Of Sciences (2002)</em></div>
+            <span class="paper-title">The Road to Modularity</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Günter P. Wagner, Mihaela Pavlicev, and James M. Cheverud &nbsp;·&nbsp; <em>Nature Reviews Genetics (2007)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              This paper introdced the community detection algorithm that is now one of the most commonly used methods in single cell pipelines. 
-              It also introduces a metric for modularity.
+              A major review examining evidence for modularity at every level of biological organization — macromolecular structure, protein interaction networks, gene regulation, and quantitative trait variation — and models for its origin. Wagner et al. frame the central open question: do modules arise through natural selection (e.g., Kashtan &amp; Alon's modularly varying goals), through biased mutational mechanisms (e.g., gene duplication followed by divergence), or both? The review bridges evo-devo and systems biology perspectives and distinguishes variational, functional, and developmental modularity as distinct but related concepts.
             </div>
-            <a href="https://doi.org/10.1073/pnas.122653799" target="_blank" class="paper-link">DOI: 10.1073/pnas.122653799 ↗</a>
-            <!-- <div class="additional-reading">
-              <div class="additional-reading-label">Additional Reading</div>
-              <div class="add-entry">
-                <span class="add-entry-dot">◆</span>
-                <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">[ Insert additional reading title ]</div>
-                  <div class="add-entry-meta add-placeholder">Author &nbsp;·&nbsp; <em>Journal (Year)</em> — Brief note on relevance.</div>
-                </div>
-              </div>
-            </div> -->
+            <a href="https://doi.org/10.1038/nrg2267" target="_blank" class="paper-link">DOI: 10.1038/nrg2267 ↗</a>
           </div>
         </div>
       </div>
 
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">05</span>
+            <span class="paper-title">Life's Building Blocks: The Modular Path to Multiscale Complexity</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Saúl Huitzil and Cristián Huepe &nbsp;·&nbsp; <em>Frontiers in Systems Biology (2024)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              A recent unifying framework arguing that modularity is the fundamental organizing principle across all biological scales — from protein domains and gene regulatory networks through cells, organs, organisms, holobionts, and ecosystems. Huitzil and Huepe identify the evolutionary advantages of modularity (evolvability, robustness, improved information flow, emergence of higher-level functions) and show how multiscale hierarchies of increasing complexity arise from modular organization. The paper synthesizes the Kashtan &amp; Alon, Wagner et al., and Kadelka et al. threads into a single panoramic view.
+            </div>
+            <a href="https://doi.org/10.3389/fsysb.2024.1417800" target="_blank" class="paper-link">DOI: 10.3389/fsysb.2024.1417800 ↗</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">40</span>
+            <span class="paper-title">Modularity in Biological Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Sergio Antonio Alcalá-Corona, Santiago Sandoval-Motta, Jesús Espinal-Enríquez, and Enrique Hernández-Lemus &nbsp;·&nbsp; <em>Frontiers in Genetics (2021)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              A comprehensive recent review surveying the concept of modularity across gene regulatory, protein interaction, metabolic, and co-expression networks. Alcalá-Corona et al. compare different algorithmic approaches to module detection, discuss the relationship between structural and functional modularity, and examine how modular organization contributes to robustness and evolvability. Useful as a one-stop reference for the current state of computational modularity analysis.
+            </div>
+            <a href="https://doi.org/10.3389/fgene.2021.701331" target="_blank" class="paper-link">DOI: 10.3389/fgene.2021.701331 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">41</span>
+            <span class="paper-title">The Biological Hierarchy, Time, and Temporal 'Omics in Evolutionary Biology: A Perspective</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Anthony A. Snead and René D. Clark &nbsp;·&nbsp; <em>Integrative and Comparative Biology (2022)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Examines the temporal dimension of biological hierarchy and modularity. Snead and Clark argue that modules are not just structural entities but have characteristic timescales, and that understanding how modular organization changes over developmental and evolutionary time requires temporal 'omics approaches. This perspective complements the spatial/topological view of modularity with an explicit temporal axis, connecting to the timescale separation themes in the retroactivity and dynamical motifs literatures.
+            </div>
+            <a href="https://doi.org/10.1093/icb/icac138" target="_blank" class="paper-link">DOI: 10.1093/icb/icac138 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- A.2 Structural Definitions: Network Motifs -->
+      <div class="category-heading" style="font-size:0.63rem; margin-top:1.5rem; margin-bottom:0.4rem; color: var(--rl-muted);">A.2 — Structural Definitions: Network Motifs as Elementary Modules</div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">11</span>
+            <span class="paper-title">Network Motifs: Simple Building Blocks of Complex Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Ron Milo, Shai Shen-Orr, Shalev Itzkovitz, Nadav Kashtan, Dmitri Chklovskii, and Uri Alon &nbsp;·&nbsp; <em>Science (2002)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              The foundational paper defining network motifs — statistically overrepresented small subgraph patterns (feedforward loops, bi-fans, etc.) found across biochemical, neuronal, ecological, and engineered networks. Different classes of networks share characteristic "motif profiles," suggesting that motifs represent universal design principles for information processing. With over 10,000 citations, this paper established the conceptual vocabulary of "building blocks" that underpins the modular view of biological networks. Motifs are the circuit-level primitives from which larger functional modules are assembled.
+            </div>
+            <a href="https://doi.org/10.1126/science.298.5594.824" target="_blank" class="paper-link">DOI: 10.1126/science.298.5594.824 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">12</span>
+            <span class="paper-title">Network Motifs: Theory and Experimental Approaches</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Uri Alon &nbsp;·&nbsp; <em>Nature Reviews Genetics (2007)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              This comprehensive review synthesizes the theory and experimental validation of network motifs five years after their initial definition by Milo et al. (2002). Alon surveys the functions of specific motifs — feed-forward loops (both coherent and incoherent types, which act as sign-sensitive delay elements and pulse generators), single-input modules (which generate temporal expression programs), and dense overlapping regulons — with particular emphasis on experimental studies that confirmed the predicted dynamical behaviors. The review shows that the same motifs recur across organisms from bacteria to humans and across network types (transcription, signaling, neuronal), suggesting they serve as universal building blocks. With over 3,000 citations, this paper cemented the motif framework as a central organizing concept in systems biology.
+            </div>
+            <a href="https://doi.org/10.1038/nrg2102" target="_blank" class="paper-link">DOI: 10.1038/nrg2102 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">19</span>
+            <span class="paper-title">Sniffers, Buzzers, Toggles and Blinkers</span>
+            <span class="badge-rec badge-sai">Unknown</span>
+            <div class="paper-author">John J. Tyson, Katherine C. Chen, and Béla Novák &nbsp;·&nbsp; <em>Current Opinion in Cell Biology (2003)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Taxonomy of elementary signal-response modules: sniffers, buzzers (ultrasensitive), toggles (bistable switches), and blinkers (oscillators). Demonstrates that the cell-cycle control network can be understood as an assembly of toggle and blinker modules.
+            </div>
+            <a href="https://doi.org/10.1016/s0955-0674(03)00017-6" target="_blank" class="paper-link">DOI: 10.1016/s0955-0674(03)00017-6 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">46</span>
+            <span class="paper-title">A Module of Negative Feedback Regulators Defines Growth Factor Signaling</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Ido Amit, Ami Citri, Tal Shay, et al. &nbsp;·&nbsp; <em>Nature Genetics (2007)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Experimental identification (Alon co-author) of a discrete module of ~120 negative feedback regulators rapidly induced by EGF receptor stimulation. Provides concrete molecular evidence that signaling networks contain identifiable functional modules, validating the modular motif perspective of Tyson et al. [19] and Alon [12].
+            </div>
+            <a href="https://doi.org/10.1038/ng1987" target="_blank" class="paper-link">DOI: 10.1038/ng1987 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">47</span>
+            <span class="paper-title">Membrane Identity and GTPase Cascades Regulated by Toggle and Cut-Out Switches</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Perla Del Conte-Zerial, Lutz Brusch, Jochen C. Rink, et al. &nbsp;·&nbsp; <em>Molecular Systems Biology (2008)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Identifies toggle switch and "cut-out switch" motifs in GTPase cascades controlling membrane compartment identity during endocytic trafficking. The cut-out switch produces irreversible transitions. Extends Tyson et al.'s [19] motif taxonomy to intracellular membrane biology, demonstrating that switch motifs operate beyond transcriptional regulation.
+            </div>
+            <a href="https://doi.org/10.1038/msb.2008.45" target="_blank" class="paper-link">DOI: 10.1038/msb.2008.45 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">48</span>
+            <span class="paper-title">The Mammalian MAPK/ERK Pathway Exhibits Properties of a Negative Feedback Amplifier</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Oliver E. Sturm, Richard Orton, Joan Grindlay, et al. &nbsp;·&nbsp; <em>Science Signaling (2010)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Shows that the MAPK/ERK signaling cascade functions as a negative feedback amplifier, analogous to an electronic amplifier circuit. Negative feedback loops provide signal amplification while maintaining bounded output. Connects Del Vecchio's engineering-inspired perspective to a concrete, experimentally characterized signaling module.
+            </div>
+            <a href="https://doi.org/10.1126/scisignal.2001212" target="_blank" class="paper-link">DOI: 10.1126/scisignal.2001212 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- A.3 Dynamical Definitions -->
+      <div class="category-heading" style="font-size:0.63rem; margin-top:1.5rem; margin-bottom:0.4rem; color: var(--rl-muted);">A.3 — Dynamical Definitions: Modules from Dynamics, Not Just Topology</div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">17</span>
+            <span class="paper-title">Principles of Dynamical Modularity in Biological Regulatory Networks</span>
+            <span class="badge-rec badge-erzso">Erzsébet</span>
+            <div class="paper-author">Dávid Deritei, William C. Aird, Mária Ercsey-Ravasz, and Erzsébet Ravasz Regan &nbsp;·&nbsp; <em>Scientific Reports (2016)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Introduces dynamical modularity: regulatory modules at all scales function as multistable switches, with global phenotypes being combinatorial products of switch-phenotypes. Key ideas: (1) Dynamical modularity — phenotypes of a multi-switch system are switch-phenotype combinations; (2) Every switch-phenotype is present in at least one global phenotype; (3) Dynamical modules at all scales are multistable switches with a small number of radically different phenotypes.
+            </div>
+            <a href="https://doi.org/10.1038/srep21957" target="_blank" class="paper-link">DOI: 10.1038/srep21957 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">21</span>
+            <span class="paper-title">Switch-like Transitions Insulate Network Motifs to Modularize Biological Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Oguzhan Atay, Andreas Doncic, and Jan M. Skotheim &nbsp;·&nbsp; <em>Cell Systems (2016)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              An elegant experimental and computational study addressing when it is valid to analyze small network motifs in isolation from the larger networks they are embedded in. Using the S. cerevisiae pheromone response, Atay et al. show that a feedforward motif is effectively insulated from the cell cycle by a switch-like (digital) transition at the interface between pathways. They identify two requirements for a "digitizer" to modularize a network: (1) the transition must be much faster than the timescale of the upstream process (timescale separation), and (2) the change in output during the transition must be much larger than the change prior to it. This paper provides the biological mechanism for insulation that Del Vecchio formalized mathematically as retroactivity attenuation through timescale separation.
+            </div>
+            <a href="https://doi.org/10.1016/j.cels.2016.06.010" target="_blank" class="paper-link">DOI: 10.1016/j.cels.2016.06.010 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">22</span>
+            <span class="paper-title">Cell Signaling as a Cognitive Process</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Anke Koseska and Philippe I. H. Bastiaens &nbsp;·&nbsp; <em>Cell (2017)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Recasts cellular signaling networks as information-processing systems, drawing parallels between cellular decision-making and cognitive processes. Argues that self-organized dynamical patterns in signaling networks — rather than hard-wired modular pathways — underlie cellular "cognition." The paper challenges purely static views of modularity by emphasizing that modules are dynamically defined through the spatiotemporal organization of signaling, complementing the dynamical modularity concepts of Deritei et al.
+            </div>
+            <a href="https://doi.org/10.1016/j.cell.2017.09.008" target="_blank" class="paper-link">DOI: 10.1016/j.cell.2017.09.008 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">36</span>
+            <span class="paper-title">Versatile System Cores as a Conceptual Basis for Generality in Cell and Developmental Biology</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Elisa Gallo, Stefano De Renzis, James Sharpe, Roberto Mayor, and Jonas Hartmann &nbsp;·&nbsp; <em>Cell Systems (2024)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Introduces the concept of "versatile system cores" — conserved molecular modules that are reused across diverse cellular and developmental contexts by being embedded in different regulatory environments. This reframing emphasizes that biological modularity is not just structural but functional: the same core module can produce qualitatively different behaviors depending on its context, which connects directly to the retroactivity literature (context-dependence of module behavior) and to the category-theoretic perspective (composition changes the parts).
+            </div>
+            <a href="https://doi.org/10.1016/j.cels.2024.08.001" target="_blank" class="paper-link">DOI: 10.1016/j.cels.2024.08.001 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">52</span>
+            <span class="paper-title">Mapping Connections in Signaling Networks with Ambiguous Modularity</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Daniel Lill, Oleksii S. Rukhlenko, et al. &nbsp;·&nbsp; <em>npj Systems Biology and Applications (2019)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Addresses the challenge of defining modules when boundaries are ambiguous — shared components participate in multiple putative modules simultaneously. Develops computational methods for mapping inter-module connections even when the decomposition is not clean. Directly engages with the "obstructions to compositionality" theme: real biological modules are leaky with context-dependent boundaries.
+            </div>
+            <a href="https://doi.org/10.1038/s41540-019-0096-1" target="_blank" class="paper-link">DOI: 10.1038/s41540-019-0096-1 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- A.4 Evolutionary Origins -->
+      <div class="category-heading" style="font-size:0.63rem; margin-top:1.5rem; margin-bottom:0.4rem; color: var(--rl-muted);">A.4 — Evolutionary Origins: Why Do Modules Exist?</div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">13</span>
+            <span class="paper-title">Spontaneous Evolution of Modularity and Network Motifs</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Nadav Kashtan and Uri Alon &nbsp;·&nbsp; <em>PNAS (2005)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Shows that when the selective environment changes in a modularly varying fashion — different combinations of the same subtasks — modular network structure and reusable motifs spontaneously emerge. Under fixed goals, evolution produces non-modular tangles. The resulting modular networks evolve dramatically faster when new goals arise. This provides a compelling mechanistic explanation for the origin of biological modularity.
+            </div>
+            <a href="https://doi.org/10.1073/pnas.0503610102" target="_blank" class="paper-link">DOI: 10.1073/pnas.0503610102 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">14</span>
+            <span class="paper-title">The Evolutionary Origins of Modularity</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Jeff Clune, Jean-Baptiste Mouret, and Hod Lipson &nbsp;·&nbsp; <em>Proceedings of the Royal Society B (2013)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              This paper proposes and tests an alternative to Kashtan &amp; Alon's "modularly varying goals" hypothesis. While Kashtan &amp; Alon argued that modularity emerges from changing environmental demands that recombine subtasks, Clune et al. demonstrate that a simpler, more ubiquitous selective pressure — minimizing the cost of connections between network nodes — is sufficient to drive the evolution of modular networks. Using computational evolution experiments, they show that multi-objective selection for both performance and low connection costs produces networks that are significantly more modular and more evolvable. The key insight is that connections are biologically expensive (axons in a brain, regulatory interactions in a gene network, physical links in a metabolic pathway), and selection to reduce this cost naturally produces sparse inter-module wiring.
+            </div>
+            <a href="https://doi.org/10.1098/rspb.2012.2863" target="_blank" class="paper-link">DOI: 10.1098/rspb.2012.2863 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">33</span>
+            <span class="paper-title">The Evolutionary Origins of Hierarchy</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Henok Mengistu, Joost Huizinga, Jean-Baptiste Mouret, and Jeff Clune &nbsp;·&nbsp; <em>PLOS Computational Biology (2016)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Extending Clune et al. (2013), this paper asks whether the same connection-cost pressure that drives modularity also drives hierarchical organization — the recursive composition of sub-modules. The answer is yes: computational evolution experiments show that networks without connection costs do not evolve to be hierarchical, but with connection costs, networks evolve to be both modular and hierarchical, exhibiting higher performance and faster adaptation. This establishes that hierarchy and modularity share a common evolutionary driver, and connects directly to Simon's original argument that hierarchic systems should evolve faster.
+            </div>
+            <a href="https://doi.org/10.1371/journal.pcbi.1004829" target="_blank" class="paper-link">DOI: 10.1371/journal.pcbi.1004829 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">34</span>
+            <span class="paper-title">The Origins and Evolution of Functional Modules: Lessons from Protein Complexes</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">José B. Pereira-Leal, Emmanuel D. Levy, and Sarah A. Teichmann &nbsp;·&nbsp; <em>Philosophical Transactions of the Royal Society B (2006)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Examines the evolutionary origins of modularity at the molecular level, focusing on protein complexes as examples of functional modules. Pereira-Leal et al. show that protein complexes evolve through gene duplication, domain recombination, and co-option of pre-existing components — mechanisms that parallel the modular network evolution studied computationally by Kashtan &amp; Alon and Clune et al., but grounded in molecular-level data. The paper provides empirical evidence that module-level evolution (assembly, disassembly, and rewiring of protein complexes) is a major source of functional innovation.
+            </div>
+            <a href="https://doi.org/10.1098/rstb.2005.1807" target="_blank" class="paper-link">DOI: 10.1098/rstb.2005.1807 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">44</span>
+            <span class="paper-title">How Evolution Learns to Generalise: Using the Principles of Learning Theory to Understand the Evolution of Developmental Organisation</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Kostas Kouvaris, Jeff Clune, Loizos Kounios, Markus Brede, and Richard A. Watson &nbsp;·&nbsp; <em>PLOS Computational Biology (2017)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Applies principles from machine learning theory to explain the evolution of modular developmental organization. Kouvaris et al. show that evolutionary processes can "learn" to generalize — that is, to produce modular, regular developmental programs that perform well across a range of environments — in much the same way that regularization in machine learning prevents overfitting. This provides a theoretical bridge between the Kashtan &amp; Alon/Clune frameworks and learning theory, suggesting that modularity evolves because it represents a form of structural regularization that improves generalization.
+            </div>
+            <a href="https://doi.org/10.1371/journal.pcbi.1005358" target="_blank" class="paper-link">DOI: 10.1371/journal.pcbi.1005358 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">45</span>
+            <span class="paper-title">Modular Evolution of the Drosophila Metabolome</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Benjamin R. Harrison, Jessica M. Hoffman, Ariana Samuelson, Daniel Raftery, and Daniel E. L. Promislow &nbsp;·&nbsp; <em>Molecular Biology and Evolution (2021)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Provides empirical evidence for modular evolution at the metabolome level in Drosophila. Harrison et al. show that metabolites cluster into modules that evolve semi-independently, with within-module correlations stronger than between-module correlations across evolutionary lineages. This demonstrates that modular organization is not confined to gene regulatory and protein interaction networks but extends to metabolic phenotypes, consistent with the hierarchical modularity observed by Ravasz et al. [10] in metabolic network topology.
+            </div>
+            <a href="https://doi.org/10.1093/molbev/msab307" target="_blank" class="paper-link">DOI: 10.1093/molbev/msab307 ↗</a>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 
 
   <!-- ═══════════════════════════════════════════════
-       CATEGORY 3 — BOOLEAN NETWORKS & CONTROL
+       SECTION B — HOW CAN MODULES BE USED FOR CONTROL AND DESIGN?
   ════════════════════════════════════════════════ -->
   <div class="category-block">
-    <div class="category-heading">Boolean Networks &amp; Control</div>
+    <div class="category-heading">B. How Can Modules Be Used for Control and Design?</div>
     <div class="reading-section">
 
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
           <div class="paper-header-left">
-            <span class="paper-num">05</span>
-            <span class="paper-title">The Dynamics of Conjunctive and Disjunctive Boolean Network Models</span>
-            <span class="badge-rec badge-sai">Sai</span>
-            <div class="paper-author">Abdul Salam Jarrah, Reinhard Laubenbacher, Alan Veliz-Cuba &nbsp;·&nbsp; <em>Bulletin Of Mathematical Biology (2010)</em></div>
+            <span class="paper-num">06</span>
+            <span class="paper-title">Logic-Based Modeling of Biological Networks with Netflux</span>
+            <span class="badge-rec badge-joe">Joe</span>
+            <div class="paper-author">Alexander P. Clark et al. &nbsp;·&nbsp; <em>PLOS Computational Biology (2025)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              A beautiful paper showing how the modular structure of a conjunctive network determines its number of steady states.
-                It extends an earlier result giving a complete attractor description for Boolean networks with a single module. 
-                Interestingly, if NOT gates are introduced, the number of steady states collapses to 1
-                regardless of the module topology or poset structure.
+              Describes how modularity aids scientific discovery by enabling integration of separately validated sub-models to understand their interaction. The tool provides a practical implementation of modular modeling principles for biological network analysis.
+            </div>
+            <a href="https://doi.org/10.1371/journal.pcbi.1012864" target="_blank" class="paper-link">DOI: 10.1371/journal.pcbi.1012864 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">15</span>
+            <span class="paper-title">The Dynamics of Conjunctive and Disjunctive Boolean Network Models</span>
+            <span class="badge-rec badge-sai">Sai</span>
+            <div class="paper-author">Abdul Salam Jarrah, Reinhard Laubenbacher, and Alan Veliz-Cuba &nbsp;·&nbsp; <em>Bulletin of Mathematical Biology (2010)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Complete characterization of attractor landscapes for conjunctive Boolean networks: the number of steady states is determined by the poset of strongly connected components (modules). Introducing NOT gates collapses the steady-state count to one regardless of the module topology or poset structure. A beautiful paper showing how the modular structure of a conjunctive network determines its number of steady states.
             </div>
             <a href="https://doi.org/10.1007/s11538-010-9501-z" target="_blank" class="paper-link">DOI: 10.1007/s11538-010-9501-z ↗</a>
             <div class="additional-reading">
@@ -514,8 +898,8 @@
               <div class="add-entry">
                 <span class="add-entry-dot">◆</span>
                 <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">Boolean Monomial Dynamical Systems</div>
-                  <div class="add-entry-meta add-placeholder">Colón-Reyes, Laubenbacher & Pareigis &nbsp;·&nbsp; <em>Annals of Combinatorics  (2004)</em>  · </div>
+                  <div class="add-entry-title">Boolean Monomial Dynamical Systems</div>
+                  <div class="add-entry-meta">Colón-Reyes, Laubenbacher &amp; Pareigis &nbsp;·&nbsp; <em>Annals of Combinatorics (2004)</em></div>
                 </div>
               </div>
             </div>
@@ -523,34 +907,22 @@
         </div>
       </div>
 
-      
-
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
           <div class="paper-header-left">
-            <span class="paper-num">06</span>
-            <span class="paper-title">Principles of dynamical modularity in biological regulatory networks</span>
-            <span class="badge-rec badge-erzso">Erzsébet</span>
-            <div class="paper-author">Dávid Deritei, William C. Aird, Mária Ercsey-Ravasz, Erzsébet Ravasz Regan &nbsp;·&nbsp; <em>Scientific Reports (2016)</em></div>
+            <span class="paper-num">16</span>
+            <span class="paper-title">Modularity of Biological Systems: A Link Between Structure and Function</span>
+            <span class="badge-rec badge-reinhard">Reinhard</span>
+            <div class="paper-author">Claus Kadelka, Matthew Wheeler, Alan Veliz-Cuba, David Murrugarra, and Reinhard Laubenbacher &nbsp;·&nbsp; <em>J. R. Soc. Interface (2023)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              Key ideas on how modular regulatory systems are built, forming a hierarchy of modules that each, individually, act as regulatoruy switches at all scales: 1) Dynamical modularity: Phenotypes of a multi-switch system are switch-phenotype combinations; 2) Every switch-phenotype is present in at least one global phenotype; 3) Dynamical modules at all scales are multistable switches with a small number of radically different phenotypes.
+              The theoretical backbone of the UF Modularity Group. Formalizes modularity via strongly connected components (SCCs) and proves that this structural decomposition induces a canonical semidirect product decomposition of the dynamics. Simulation evidence suggests modularity may have evolved to increase phenotypic complexity while maintaining robustness. Demonstrates efficient modular control identification on a 69-node pancreatic cancer model.
             </div>
-            <a href="https://doi.org/10.1038/srep21957" target="_blank" class="paper-link">DOI: 10.1038/srep21957 ↗</a>
-            <!-- <div class="additional-reading">
-              <div class="additional-reading-label">Additional Reading</div>
-              <div class="add-entry">
-                <span class="add-entry-dot">◆</span>
-                <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">[ Insert additional reading title ]</div>
-                  <div class="add-entry-meta add-placeholder">Author &nbsp;·&nbsp; <em>Journal (Year)</em> — Brief note on relevance.</div>
-                </div>
-              </div>
-            </div> -->
+            <a href="https://doi.org/10.1098/rsif.2023.0505" target="_blank" class="paper-link">DOI: 10.1098/rsif.2023.0505 ↗</a>
           </div>
         </div>
       </div>
@@ -558,129 +930,354 @@
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
           <div class="paper-header-left">
-            <span class="paper-num">07</span>
-            <span class="paper-title">A feedback loop of conditionally stable circuits drives the cell cycle from checkpoint to checkpoint</span>
+            <span class="paper-num">18</span>
+            <span class="paper-title">A Feedback Loop of Conditionally Stable Circuits Drives the Cell Cycle from Checkpoint to Checkpoint</span>
             <span class="badge-rec badge-erzso">Erzsébet</span>
-            <div class="paper-author">Dávid Deritei, Jordan Rozum, Erzsébet Ravasz Regan, Réka Albert &nbsp;·&nbsp; <em>Scientific Reports (2019)</em></div>
+            <div class="paper-author">Dávid Deritei, Jordan Rozum, Erzsébet Ravasz Regan, and Réka Albert &nbsp;·&nbsp; <em>Scientific Reports (2019)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              Relevant parts of the abstract: "By generalizing the concept of stable motif, i.e., a self-sustaining positive feedback loop that maintains an associated state, we introduce the concept of a conditionally stable motif, the stability of which is contingent on external conditions. [...] Self-destabilizing conditionally stable motifs suggest a general negative feedback mechanism leading to sustained oscillations."
+              Generalizes stable motifs to conditionally stable motifs, modeling the cell cycle as a sequential chain of self-destabilizing modules that hand off control checkpoint-by-checkpoint. "By generalizing the concept of stable motif, i.e., a self-sustaining positive feedback loop that maintains an associated state, we introduce the concept of a conditionally stable motif, the stability of which is contingent on external conditions. [...] Self-destabilizing conditionally stable motifs suggest a general negative feedback mechanism leading to sustained oscillations."
             </div>
             <a href="https://doi.org/10.1038/s41598-019-52725-1" target="_blank" class="paper-link">DOI: 10.1038/s41598-019-52725-1 ↗</a>
-            <!-- <div class="additional-reading">
-              <div class="additional-reading-label">Additional Reading</div>
-              <div class="add-entry">
-                <span class="add-entry-dot">◆</span>
-                <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">[ Insert additional reading title ]</div>
-                  <div class="add-entry-meta add-placeholder">Author &nbsp;·&nbsp; <em>Journal (Year)</em> — Brief note on relevance.</div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <!-- ═══════════════════════════════════════════════
-       CATEGORY 4 — SYSTEMS BIOLOGY & APPLICATIONS
-  ════════════════════════════════════════════════ -->
-  <div class="category-block">
-    <div class="category-heading">Systems Biology &amp; Applications</div>
-    <div class="reading-section">
-
-      <div class="paper-item" onclick="togglePaper(this)">
-        <div class="paper-header">
-          <div class="paper-header-left">
-            <span class="paper-num">08</span>
-            <span class="paper-title">Sniffers, buzzers, toggles and blinkers: dynamics of regulatory and signaling pathways in the cell</span>
-            <span class="badge-rec badge-sai">Unknown</span>
-            <div class="paper-author">John J Tyson, Katherine C Chen, Bela Novak &nbsp;·&nbsp; <em>Current Opinion In Cell Biology (2003)</em></div>
-          </div>
-          <span class="paper-toggle">+</span>
-        </div>
-        <!-- <div class="paper-body">
-          <div class="paper-body-inner">
-            <div class="paper-thoughts">
-              Insert a brief description or summary of this paper here. Discuss how the dynamical motifs presented contribute to the understanding of complex signaling pathways.
-            </div>
-            <a href="https://doi.org/10.1016/s0955-0674(03)00017-6" target="_blank" class="paper-link">DOI: 10.1016/s0955-0674(03)00017-6 ↗</a>
-            <div class="additional-reading">
-              <div class="additional-reading-label">Additional Reading</div>
-              <div class="add-entry">
-                <span class="add-entry-dot">◆</span>
-                <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">[ Insert additional reading title ]</div>
-                  <div class="add-entry-meta add-placeholder">Author &nbsp;·&nbsp; <em>Journal (Year)</em> — Brief note on relevance.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
 
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
           <div class="paper-header-left">
-            <span class="paper-num">09</span>
-            <span class="paper-title">Cancer mutationscape: revealing the link between modular restructuring and intervention efficacy among mutations</span>
+            <span class="paper-num">20</span>
+            <span class="paper-title">Cancer Mutationscape</span>
             <span class="badge-rec badge-david">David</span>
-            <div class="paper-author">Daniel Plaugher, David Murrugarra &nbsp;·&nbsp; <em>Npj Systems Biology And Applications (2024)</em></div>
-          </div>
-          <span class="paper-toggle">+</span>
-        </div>
-        <!-- <div class="paper-body">
-          <div class="paper-body-inner">
-            <div class="paper-thoughts">
-              Insert a brief description or summary of this paper here. Mention how modular restructuring applies to cancer intervention models.
-            </div>
-            <a href="https://doi.org/10.1038/s41540-024-00398-6" target="_blank" class="paper-link">DOI: 10.1038/s41540-024-00398-6 ↗</a>
-            <div class="additional-reading">
-              <div class="additional-reading-label">Additional Reading</div>
-              <div class="add-entry">
-                <span class="add-entry-dot">◆</span>
-                <div class="add-entry-content">
-                  <div class="add-entry-title add-placeholder">[ Insert additional reading title ]</div>
-                  <div class="add-entry-meta add-placeholder">Author &nbsp;·&nbsp; <em>Journal (Year)</em> — Brief note on relevance.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-
-    </div>
-  </div>
-
-
-  <!-- ═══════════════════════════════════════════════
-       CATEGORY 5 — APPLIED CATEGORY THEORY
-  ════════════════════════════════════════════════ -->
-  <div class="category-block">
-    <div class="category-heading">Applied Category Theory</div>
-    <div class="reading-section">
-
-      <div class="paper-item" onclick="togglePaper(this)">
-        <div class="paper-header">
-          <div class="paper-header-left">
-            <span class="paper-num">10</span>
-            <span class="paper-title">Structured versus Decorated Cospans</span>
-            <span class="badge-rec badge-aditya">Adittya</span>
-            <div class="paper-author">John C. Baez, Kenny Courser &nbsp;·&nbsp; <em>Compositionality (2022)</em></div>
+            <div class="paper-author">Daniel Plaugher and David Murrugarra &nbsp;·&nbsp; <em>npj Systems Biology and Applications (2024)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              If we assume modularity implies compositionality, i.e. a way to study the behaviour of a system by studying the behaviour of its subsystems and the way the subsystems are interconnected, then this paper develops general mathematical frameworks based on monoidal double category theory, namely structured cospans and decorated cospans, to study systems' behaviour from the principle of compositionality. The authors demonstrated their general theory in concrete systems such as graphs, electrical circuits, Petri nets, reaction networks and dynamical systems. From a biological perspective, this compositional viewpoint may offer a principled way to reason about when experimentally identified subsystems such as pathways or regulatory modules can be treated as approximately independent, and when interconnections between them fundamentally alter their dynamical behavior.
+              Demonstrates that mutations reshape modular hierarchies in pancreatic cancer gene regulatory networks. The position of mutations within the modular decomposition predicts therapeutic efficacy. Reveals the link between modular restructuring and intervention efficacy among mutations.
+            </div>
+            <a href="https://doi.org/10.1038/s41540-024-00398-6" target="_blank" class="paper-link">DOI: 10.1038/s41540-024-00398-6 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">23</span>
+            <span class="paper-title">Design Patterns of Biological Cells</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Steven S. Andrews, H. Steven Wiley, and Herbert M. Sauro &nbsp;·&nbsp; <em>BioEssays (2024)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Extends the software engineering concept of "design patterns" — generalized solutions to recurring problems — to cell biology. The authors catalog 21 design patterns in three categories: creational (processes that build the cell), structural (layouts of reaction networks), and behavioral (reaction network function, e.g., switching, adaptation, oscillation). The catalog builds explicitly on Alon's network motifs and provides a higher level of abstraction that connects network topology to biological function. Applied to E. coli central metabolism and yeast pheromone signaling, the framework reveals how the same design patterns recur across very different biological systems.
+            </div>
+            <a href="https://doi.org/10.1002/bies.202300188" target="_blank" class="paper-link">DOI: 10.1002/bies.202300188 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">26</span>
+            <span class="paper-title">Computational Design of Synthetic Gene Circuits with Composable Parts</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Salvatore Marchisio and Jörg Stelling &nbsp;·&nbsp; <em>Bioinformatics (2008)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Develops computational methods for designing synthetic gene circuits from libraries of standardized, composable parts. The paper formalizes the idea that biological circuit design should proceed by selecting and connecting well-characterized modules — an engineering realization of the modularity hypothesis. The approach faces the same retroactivity challenges that Del Vecchio identifies: parts do not always behave the same way when connected as when isolated.
+            </div>
+            <a href="https://doi.org/10.1093/bioinformatics/btn330" target="_blank" class="paper-link">DOI: 10.1093/bioinformatics/btn330 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">35</span>
+            <span class="paper-title">Interpretation of Cancer Mutations Using a Multiscale Map of Protein Systems</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Fan Zheng, Marcus R. Kelly, Dana J. Ramms, et al. &nbsp;·&nbsp; <em>Science (2021)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              From the Ideker and Krogan groups, this paper constructs a hierarchical, multiscale map of human protein systems and uses it to interpret cancer mutations. By mapping mutations onto this modular hierarchy, the authors show that mutations affecting the same module tend to produce similar clinical phenotypes, even when they occur in different genes. This provides large-scale empirical evidence that modular organization is functionally meaningful for understanding disease — mutations are best understood not at the level of individual genes but at the level of the modules they disrupt.
+            </div>
+            <a href="https://doi.org/10.1126/science.abf3067" target="_blank" class="paper-link">DOI: 10.1126/science.abf3067 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">37</span>
+            <span class="paper-title">Predicting Perturbation Patterns from the Topology of Biological Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Marc Santolini and Albert-László Barabási &nbsp;·&nbsp; <em>PNAS (2018)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Demonstrates that the response of biological networks to perturbations (node removals, expression changes) can be predicted from network topology alone, without detailed knowledge of kinetic parameters. Santolini and Barabási show that perturbation patterns propagate through modular structure in predictable ways, with modules acting as natural units of perturbation containment. This provides a dynamical justification for modular decomposition: modules are not just structural conveniences but functional units that shape how perturbations spread.
+            </div>
+            <a href="https://doi.org/10.1073/pnas.1720589115" target="_blank" class="paper-link">DOI: 10.1073/pnas.1720589115 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">39</span>
+            <span class="paper-title">A Load Driver Device for Engineering Modularity in Biological Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Deepak Mishra, Phillip M. Rivera, Allen Lin, Domitilla Del Vecchio, and Ron Weiss &nbsp;·&nbsp; <em>Nature Biotechnology (2014)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              The experimental companion to Del Vecchio's theoretical retroactivity framework. Mishra et al. design and build a synthetic "load driver" device in E. coli that insulates upstream genetic modules from downstream loading effects. The device acts as a buffer amplifier, absorbing the retroactivity imposed by downstream promoter-binding sites so that the upstream module's behavior is preserved upon interconnection. This is the first engineered biomolecular insulation device validated in living cells, demonstrating that the retroactivity problem identified theoretically by Del Vecchio et al. (2008) is both real and solvable.
+            </div>
+            <a href="https://doi.org/10.1038/nbt.3044" target="_blank" class="paper-link">DOI: 10.1038/nbt.3044 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">49</span>
+            <span class="paper-title">Networked Buffering: A Basic Mechanism for Distributed Robustness in Complex Adaptive Systems</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">James M. Whitacre and Axel Bender &nbsp;·&nbsp; <em>Theoretical Biology and Medical Modelling (2010)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Proposes "networked buffering" as a mechanism by which modular architecture provides distributed robustness: different modules compensate for each other's failures without explicit redundancy. Connects modularity to the broader question of how biological systems maintain function despite perturbations.
+            </div>
+            <a href="https://doi.org/10.1186/1742-4682-7-20" target="_blank" class="paper-link">DOI: 10.1186/1742-4682-7-20 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">50</span>
+            <span class="paper-title">Empirical Inference of Circuitry and Plasticity in a Kinase Signaling Network</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Edmund H. Wilkes, Camille Terfve, John G. Gribben, Julio Saez-Rodriguez, and Pedro Rodriguez Cutillas &nbsp;·&nbsp; <em>PNAS (2015)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Uses phosphoproteomics to infer modular circuit structure and plasticity of a kinase signaling network. Different stimuli activate different modular configurations of the same underlying network, providing experimental evidence for context-dependent modularity — the phenomenon Del Vecchio formalizes as retroactivity and Gallo et al. reframe as versatility.
+            </div>
+            <a href="https://doi.org/10.1073/pnas.1423344112" target="_blank" class="paper-link">DOI: 10.1073/pnas.1423344112 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">55</span>
+            <span class="paper-title">Control and Regulation of Pathways via Negative Feedback</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Herbert M. Sauro &nbsp;·&nbsp; <em>Journal of the Royal Society Interface (2017)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              A control-theoretic analysis of how negative feedback regulates signaling and metabolic pathways, treating pathways as modular control systems. Sauro connects classical control theory concepts (gain, stability margins, bandwidth) to biological pathway regulation, providing a bridge between the engineering perspective of Del Vecchio's retroactivity work and the biological reality of pathway dynamics.
+            </div>
+            <a href="https://doi.org/10.1098/rsif.2016.0848" target="_blank" class="paper-link">DOI: 10.1098/rsif.2016.0848 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">57</span>
+            <span class="paper-title">Investigation on Changes of Modularity and Robustness by Edge-Removal Mutations in Signaling Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Cong-Doan Truong and Yung-Keun Kwon &nbsp;·&nbsp; <em>BMC Systems Biology (2017)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Systematically investigates how mutations (modeled as edge removals) affect both the modularity and robustness of signaling networks. Truong and Kwon find that mutations that decrease modularity also tend to decrease robustness, providing computational evidence for the hypothesis that modular organization contributes to the robustness of biological networks.
+            </div>
+            <a href="https://doi.org/10.1186/s12918-017-0505-2" target="_blank" class="paper-link">DOI: 10.1186/s12918-017-0505-2 ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION C — HOW CAN MODULES BE COMPOSED?
+  ════════════════════════════════════════════════ -->
+  <div class="category-block">
+    <div class="category-heading">C. How Can Modules Be Composed?</div>
+    <div class="reading-section">
+
+      <!-- C.1 Retroactivity -->
+      <div class="category-heading" style="font-size:0.63rem; margin-top:1.5rem; margin-bottom:0.4rem; color: var(--rl-muted);">C.1 — Retroactivity: Quantifying Failures of Composition</div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">56</span>
+            <span class="paper-title">Dissecting the Puzzle of Life: Modularization of Signal Transduction Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Julio Saez-Rodriguez, Andreas Kremling, and Ernst Dieter Gilles &nbsp;·&nbsp; <em>Computers and Chemical Engineering (2005)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              An early formalization of the concept that interconnecting signaling modules introduces "retroactivity-like" effects that alter module behavior — predating and anticipating Del Vecchio et al.'s (2008) formal retroactivity framework by three years. Saez-Rodriguez et al. discuss how signal transduction networks can be decomposed into modules for modeling purposes, and identify the conditions under which modular decomposition is valid. An important precursor in the intellectual lineage leading to the full retroactivity theory.
+            </div>
+            <a href="https://doi.org/10.1016/j.compchemeng.2004.08.035" target="_blank" class="paper-link">DOI: 10.1016/j.compchemeng.2004.08.035 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">27</span>
+            <span class="paper-title">Modular Cell Biology: Retroactivity and Insulation</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Domitilla Del Vecchio, Alexander J. Ninfa, and Eduardo D. Sontag &nbsp;·&nbsp; <em>Molecular Systems Biology (2008)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Introduces retroactivity as a quantitative measure of modularity failure. Retroactivity is large when transcription factor abundance is comparable to binding-site count, or when binding affinity is high. Proposes phosphorylation-cycle-based insulation devices inspired by electronic amplifier design.
+            </div>
+            <a href="https://doi.org/10.1038/msb4100204" target="_blank" class="paper-link">DOI: 10.1038/msb4100204 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">28</span>
+            <span class="paper-title">Engineering Principles in Bio-Molecular Systems: From Retroactivity to Modularity</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Domitilla Del Vecchio and Eduardo D. Sontag &nbsp;·&nbsp; <em>IFAC Proceedings Volumes (2009)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Expands the retroactivity framework into a control-theoretic input/output formalism. Casts retroactivity attenuation as a disturbance rejection problem.
+            </div>
+            <a href="https://doi.org/10.1016/S0947-3580(09)70995-1" target="_blank" class="paper-link">DOI: 10.1016/S0947-3580(09)70995-1 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">29</span>
+            <span class="paper-title">Modular Composition of Gene Transcription Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Andras Gyorgy and Domitilla Del Vecchio &nbsp;·&nbsp; <em>PLOS Computational Biology (2014)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Develops three retroactivity matrices (internal, scaling, mixing) for predicting how modules behave upon interconnection. Demonstrates counter-intuitive behaviors in common motifs. Provides a quantitative metric of robustness to interconnection.
+            </div>
+            <a href="https://doi.org/10.1371/journal.pcbi.1003486" target="_blank" class="paper-link">DOI: 10.1371/journal.pcbi.1003486 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">38</span>
+            <span class="paper-title">Modularity, Context-Dependence, and Insulation in Engineered Biological Circuits</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Domitilla Del Vecchio &nbsp;·&nbsp; <em>Trends in Biotechnology (2015)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              A capstone review synthesizing Del Vecchio's decade of work on retroactivity and insulation, written for the synthetic biology community. The paper frames three sources of context-dependence in engineered biological circuits: retroactivity (loading effects at interconnections), resource competition (shared transcriptional/translational machinery), and growth-rate coupling. For each, Del Vecchio reviews both the theoretical framework and experimental evidence, and discusses design strategies for achieving insulation. The review makes explicit the practical consequences of the retroactivity theory for synthetic circuit design: without insulation, modular design is unreliable, but with appropriate insulation devices, biological circuits can approach the composability taken for granted in electronic engineering.
+            </div>
+            <a href="https://doi.org/10.1016/j.tibtech.2014.11.009" target="_blank" class="paper-link">DOI: 10.1016/j.tibtech.2014.11.009 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C.2 Category Theory -->
+      <div class="category-heading" style="font-size:0.63rem; margin-top:1.5rem; margin-bottom:0.4rem; color: var(--rl-muted);">C.2 — Category Theory: Formalizing Composition</div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">30</span>
+            <span class="paper-title">Structured Versus Decorated Cospans</span>
+            <span class="badge-rec badge-aditya">Adittya</span>
+            <div class="paper-author">John C. Baez and Kenny Courser &nbsp;·&nbsp; <em>Compositionality (2022)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Compares structured and decorated cospans for formalizing open-system composition. Applied to graphs, circuits, Petri nets, reaction networks, and dynamical systems. If we assume modularity implies compositionality, this paper develops general mathematical frameworks based on monoidal double category theory to study systems' behaviour from the principle of compositionality. From a biological perspective, this compositional viewpoint may offer a principled way to reason about when experimentally identified subsystems such as pathways or regulatory modules can be treated as approximately independent, and when interconnections between them fundamentally alter their dynamical behavior.
             </div>
             <a href="https://doi.org/10.32408/compositionality-4-3" target="_blank" class="paper-link">DOI: 10.32408/compositionality-4-3 ↗</a>
           </div>
@@ -690,17 +1287,17 @@
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
           <div class="paper-header-left">
-            <span class="paper-num">11</span>
-            <span class="paper-title">Algebras of open dynamical systems on the operad of wiring diagrams</span>
+            <span class="paper-num">31</span>
+            <span class="paper-title">Algebras of Open Dynamical Systems on the Operad of Wiring Diagrams</span>
             <span class="badge-rec badge-aditya">Adittya</span>
-            <div class="paper-author">Dmitry Vagner, David I. Spivak, Eugene Lerman &nbsp;·&nbsp; <em>Theory and Applications of Categories (2015)</em></div>
+            <div class="paper-author">Dmitry Vagner, David I. Spivak, and Eugene Lerman &nbsp;·&nbsp; <em>Theory and Applications of Categories (2015)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              Assuming modularity implies compositionality, this paper develops a general mathematical framework based on the theory of operads and operad algebras to study dynamical systems by interconnecting the dynamics of the subsystems. Quoting the relevant portion from the abstract: "In this paper, we use the language of operads to study open dynamical systems. More specifically, we study the algebraic nature of assembling complex dynamical systems from an interconnection of simpler ones. The syntactic architecture of such interconnections is encoded using the visual language of wiring diagrams. We define the symmetric monoidal category W, from which we may construct an operad OW, whose objects are black boxes with input and output ports, and whose morphisms are wiring diagrams, thus prescribing the algebraic rules for interconnection. We then define two W-algebras G and L, which associate semantic content to the structures in W. Respectively, they correspond to general and to linear systems of differential equations, in which an internal state is controlled by inputs and produces outputs."
+              Operad-theoretic framework separating system architecture (wiring diagrams) from subsystem dynamics (ODEs), with algebraic composition rules. The paper uses the language of operads to study open dynamical systems and the algebraic nature of assembling complex dynamical systems from an interconnection of simpler ones. The syntactic architecture of such interconnections is encoded using the visual language of wiring diagrams.
             </div>
             <a href="https://doi.org/10.70930/tac/7tz1nkbd" target="_blank" class="paper-link">DOI: 10.70930/tac/7tz1nkbd ↗</a>
           </div>
@@ -710,19 +1307,276 @@
       <div class="paper-item" onclick="togglePaper(this)">
         <div class="paper-header">
           <div class="paper-header-left">
-            <span class="paper-num">12</span>
+            <span class="paper-num">32</span>
             <span class="paper-title">Obstructions to Compositionality</span>
             <span class="badge-rec badge-aditya">Adittya</span>
-            <div class="paper-author">Nihil Shah, Paolo Perrone &nbsp;·&nbsp; <em>EPTCS (2023)</em></div>
+            <div class="paper-author">Nihil Shah and Paolo Perrone &nbsp;·&nbsp; <em>EPTCS (2023)</em></div>
           </div>
           <span class="paper-toggle">+</span>
         </div>
         <div class="paper-body">
           <div class="paper-body-inner">
             <div class="paper-thoughts">
-              If we assume modularity implies compositionality, then it follows that non-compositionality implies non-modularity. Quoting the relevant portion from the abstract: "Formally, we introduce invariants of categories that we call zeroth and first homotopy posets, generalising in a precise sense the π₀ and π₁ of a groupoid. These posets can be used to obtain a qualitative description of how far an object is from being terminal and a morphism is from being iso. In the context of applied category theory, this formal machinery gives us a way to qualitatively describe the 'failures of compositionality', seen as failures of certain (op)lax functors to be strong, by classifying obstructions to the (op)laxators being isomorphisms." This approach may suggest a general mathematical framework for studying evolved biological systems that exhibit partial or context-dependent modularity.
+              Homotopy-theoretic invariants classifying how far a system is from being perfectly compositional. Provides the abstract counterpart to Del Vecchio's mechanistic retroactivity. If we assume modularity implies compositionality, then non-compositionality implies non-modularity. The paper introduces invariants of categories (zeroth and first homotopy posets) that give a qualitative description of the "failures of compositionality" — seen as failures of certain (op)lax functors to be strong. This approach may suggest a general mathematical framework for studying evolved biological systems that exhibit partial or context-dependent modularity.
             </div>
             <a href="https://doi.org/10.4204/EPTCS.397.14" target="_blank" class="paper-link">DOI: 10.4204/EPTCS.397.14 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C.3 Hierarchical Composition -->
+      <div class="category-heading" style="font-size:0.63rem; margin-top:1.5rem; margin-bottom:0.4rem; color: var(--rl-muted);">C.3 — Hierarchical Composition and Pathway Coordination</div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">51</span>
+            <span class="paper-title">Hierarchical Feedback Modules and Reaction Hubs in Cell Signaling Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Jianfeng Xu and Yueheng Lan &nbsp;·&nbsp; <em>PLOS ONE (2015)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Analyzes hierarchical organization of feedback modules in signaling networks, identifying "reaction hubs" that participate in multiple feedback loops across modules. The feedback hierarchy provides a structural basis for multi-timescale dynamics, connecting to Deritei et al.'s dynamical modularity and the timescale-separation insulation mechanism of Atay et al.
+            </div>
+            <a href="https://doi.org/10.1371/journal.pone.0125886" target="_blank" class="paper-link">DOI: 10.1371/journal.pone.0125886 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">53</span>
+            <span class="paper-title">The Coordination of Pathways in Metazoans: An Integrated Framework</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Shiping Tang &nbsp;·&nbsp; <em>Biological Theory (2025)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Proposes a framework for how signaling pathways — as modular units — are coordinated in metazoan organisms. Pathway coordination requires mechanisms beyond simple compositional assembly, including cross-pathway regulation and context-dependent switching. Bridges molecular-level modules and whole-organism physiology.
+            </div>
+            <a href="https://doi.org/10.1007/s13752-025-00498-4" target="_blank" class="paper-link">DOI: 10.1007/s13752-025-00498-4 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C.4 Practical Tools -->
+      <div class="category-heading" style="font-size:0.63rem; margin-top:1.5rem; margin-bottom:0.4rem; color: var(--rl-muted);">C.4 — Practical Tools for Modular Model Assembly</div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">24</span>
+            <span class="paper-title">A Reappraisal of How to Build Modular, Reusable Models of Biological Systems</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Matthew L. Neal, Michal Gałdzicki, Christopher T. Thompson, et al. &nbsp;·&nbsp; <em>PLOS Computational Biology (2014)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Directly addresses the practical challenge of building composable computational models of biological systems. Neal et al. argue that existing model-building practices often produce monolithic, non-reusable models, and propose principles for modular model construction that would enable components to be independently validated, shared, and recombined — mirroring the biological modularity that the models aim to represent.
+            </div>
+            <a href="https://doi.org/10.1371/journal.pcbi.1003849" target="_blank" class="paper-link">DOI: 10.1371/journal.pcbi.1003849 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">25</span>
+            <span class="paper-title">ModelBricks — Modules for Reproducible Modeling Improving Model Annotation and Provenance</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Ann E. Cowan, George W. Bhatt, et al. &nbsp;·&nbsp; <em>npj Systems Biology and Applications (2019)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Introduces the ModelBricks platform for creating modular, reusable, well-annotated computational model components. Each "brick" encapsulates a well-characterized biological mechanism (e.g., a specific phosphorylation cycle, a feedback loop) with standardized annotations and provenance. Bricks can be composed into larger models, providing a practical infrastructure for the composable modeling philosophy advocated by Neal et al.
+            </div>
+            <a href="https://doi.org/10.1038/s41540-019-0117-x" target="_blank" class="paper-link">DOI: 10.1038/s41540-019-0117-x ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">54</span>
+            <span class="paper-title">Complexity and Modularity of Intracellular Networks: A Systematic Approach for Modelling and Simulation</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Ion I. Moraru, Michael L. Blinov, and Oliver Ruebenacker &nbsp;·&nbsp; <em>IET Systems Biology (2008)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Presents a systematic framework for decomposing intracellular networks into modules for simulation purposes. Moraru et al. define criteria for when a sub-network can be modeled independently and when inter-module interactions must be retained. The approach provides practical guidelines for computational modelers deciding where to draw module boundaries — a hands-on complement to the theoretical treatments of compositionality.
+            </div>
+            <a href="https://doi.org/10.1049/iet-syb:20080092" target="_blank" class="paper-link">DOI: 10.1049/iet-syb:20080092 ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION D — HOW CAN MODULES BE DISCOVERED?
+  ════════════════════════════════════════════════ -->
+  <div class="category-block">
+    <div class="category-heading">D. How Can Modules Be Discovered?</div>
+    <div class="reading-section">
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">03</span>
+            <span class="paper-title">Mapping the Multiscale Structure of Biological Systems</span>
+            <span class="badge-rec badge-joe">Joe</span>
+            <div class="paper-author">Leah V. Schaffer and Trey Ideker &nbsp;·&nbsp; <em>Cell Systems (2021)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Extends the evolutionary argument for modularity by proposing that modular organization enables transfer of larger functional units between organisms (e.g., plasmids in horizontal gene transfer). Surveys computational approaches for mapping multiscale biological structure.
+            </div>
+            <a href="https://doi.org/10.1016/j.cels.2021.05.012" target="_blank" class="paper-link">DOI: 10.1016/j.cels.2021.05.012 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">07</span>
+            <span class="paper-title">Community Structure in Social and Biological Networks</span>
+            <span class="badge-rec badge-sai">Sai</span>
+            <div class="paper-author">M. Girvan and M. E. J. Newman &nbsp;·&nbsp; <em>Proceedings of the National Academy of Sciences (2002)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Introduced the edge-betweenness community detection algorithm and the modularity score Q. The Louvain and Leiden algorithms used in single-cell pipelines descend from this work. This paper introduced one of the most commonly used community detection methods in single cell pipelines, and also introduces a metric for modularity.
+            </div>
+            <a href="https://doi.org/10.1073/pnas.122653799" target="_blank" class="paper-link">DOI: 10.1073/pnas.122653799 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">08</span>
+            <span class="paper-title">The Structure and Function of Complex Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">M. E. J. Newman &nbsp;·&nbsp; <em>SIAM Review (2003)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              The definitive review of network science, covering small-world networks, scale-free networks, community structure, network robustness, and dynamical processes on networks. Provides the mathematical and conceptual framework within which biological modularity research operates.
+            </div>
+            <a href="https://doi.org/10.1137/S003614450342480" target="_blank" class="paper-link">DOI: 10.1137/S003614450342480 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">09</span>
+            <span class="paper-title">Modularity and Community Structure in Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">M. E. J. Newman &nbsp;·&nbsp; <em>PNAS (2006)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Introduces the spectral optimization method for modularity maximization — a major algorithmic advance over the original Girvan-Newman approach. By reformulating modularity optimization as a spectral problem on the "modularity matrix," Newman made it feasible to find high-quality partitions of much larger networks, accelerating application to genome-scale biological data.
+            </div>
+            <a href="https://doi.org/10.1073/pnas.0601602103" target="_blank" class="paper-link">DOI: 10.1073/pnas.0601602103 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">10</span>
+            <span class="paper-title">Hierarchical Organization of Modularity in Metabolic Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Erzsébet Ravasz, Audrey L. Somera, Dale A. Mongru, Zoltán N. Oltvai, and Albert-László Barabási &nbsp;·&nbsp; <em>Science (2002)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              First large-scale demonstration that metabolic networks across 43 organisms exhibit hierarchical modularity: small, densely connected modules combine into larger, less cohesive units following a power law. Within E. coli, the hierarchy closely maps to known metabolic functions.
+            </div>
+            <a href="https://doi.org/10.1126/science.1073374" target="_blank" class="paper-link">DOI: 10.1126/science.1073374 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">42</span>
+            <span class="paper-title">Identification of Topological Network Modules in Perturbed Protein Interaction Networks</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Mihaela E. Sardiu, Joshua M. Gilmore, Brad Groppe, Laurence Florens, and Michael P. Washburn &nbsp;·&nbsp; <em>Scientific Reports (2017)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              Develops methods for identifying topological modules in protein interaction networks under perturbation. Sardiu et al. show that perturbations can alter modular boundaries, and that tracking how modules restructure reveals functional dependencies not apparent in static views. Connects to Plaugher &amp; Murrugarra's finding that mutations reshape modular hierarchies, and to Santolini &amp; Barabási's work on perturbation propagation.
+            </div>
+            <a href="https://doi.org/10.1038/srep43845" target="_blank" class="paper-link">DOI: 10.1038/srep43845 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-item" onclick="togglePaper(this)">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <span class="paper-num">43</span>
+            <span class="paper-title">Analysis of the Human Endogenous Coregulator Complexome</span>
+            <span class="badge-rec badge-steve">steve-herbert-steve-joe</span>
+            <div class="paper-author">Anna Malovannaya, Rainer B. Lanz, Sung Yun Jung, et al. &nbsp;·&nbsp; <em>Cell (2011)</em></div>
+          </div>
+          <span class="paper-toggle">+</span>
+        </div>
+        <div class="paper-body">
+          <div class="paper-body-inner">
+            <div class="paper-thoughts">
+              A large-scale proteomic study mapping the modular organization of human transcriptional coregulator complexes, identifying hundreds of distinct protein complexes that function as modular units in transcriptional regulation. Shared subunits create connections between modules. Provides molecular-level empirical evidence for modular gene regulation.
+            </div>
+            <a href="https://doi.org/10.1016/j.cell.2011.05.006" target="_blank" class="paper-link">DOI: 10.1016/j.cell.2011.05.006 ↗</a>
           </div>
         </div>
       </div>
